@@ -1,2 +1,0 @@
-elalla
-amatakum
