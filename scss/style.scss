@@ -1,0 +1,135 @@
+
+@font-face{
+	font-family: 'Metropolis';
+    src: url(../fonts/Metropolis-Bold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'Metropolis1';
+    src: url(../fonts/Metropolis-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (max-width:1024px){
+
+}
+body {
+background: #FFFFFF 0% 0% no-repeat padding-box;
+opacity: 1;
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none;
+color: black; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+}
+
+
+.container__header {
+	width: 1920px;
+	height: 140px;
+	font-family: Metropolis;
+	letter-spacing: -0.28px;
+	font-size: 14px;
+}
+
+
+.header .container__header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.header__logo{
+	position: relative;
+	left: 30px;
+}
+
+.header_nav li {
+	display: block;
+	padding: 0em 1.5em;
+}
+
+.header_nav_list{
+	display: flex;	
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.header_nav_list .koszyk{
+    display: flex;
+    border: 1px solid #E1E2E8;
+    width: 254px;
+    height: 55px;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.kosz{
+	width: 26px;
+    height: 14px;
+    background: #9BCB3B;
+    border-radius: 2px;
+	position: relative;
+	left: -10px;
+	top: -10px;
+	letter-spacing: -0.2px;
+    color: #FFFFFF;
+	font: 10px/12px Metropolis;
+	text-align: center;
+}
+
+.koszI{
+	position: relative;
+	background: #E1E2E8;
+	width: 1px;
+    height: 41px;
+	left: 30px;
+}
+
+.kosztxt--pos{
+	position: relative;
+	top: 6px;
+	left: 60px;
+}
+.price{
+	font-family: Metropolis1;
+}
+
+.header_nav_list .arrow{
+	display: flex;
+	align-items: center;
+	width: 35px;
+	height: 56px;
+	background-color: #9BCB3B;
+	padding: 0;
+	margin-right: 30px;
+}
+ .arrow--pos{
+	position: relative;
+	left: 13px;
+
+}
+.header_bottom{
+	border-top: 1px solid #E1E2E8;
+	width: 1920px;
+	height: 57px;
+	justify-content: space-evenly;
+}
+.link{
+	user-select: none;
+    -moz-user-select: none;
+}
+.maincontainer{
+	width: 1920px;
+    height: 1896px;
+	background: #F2F3F4 0% 0% no-repeat padding-box;
+
+}
