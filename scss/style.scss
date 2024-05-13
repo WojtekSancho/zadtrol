@@ -15,6 +15,10 @@ body{
 	text-transform: uppercase;
 	letter-spacing: -0.28px;
 }
+.navbar img {
+    margin-right: 10px;
+	vertical-align: middle;
+	}
 
 
 nav { 
@@ -55,4 +59,11 @@ a:visited {
 }
 main{
 	background-color: #F2F3F4;
+	display: flex;
+	justify-content: center;
+	padding: 3%;
+}
+.container__slider img{
+	width:100%;
+
 }
