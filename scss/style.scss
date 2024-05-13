@@ -10,14 +10,18 @@
 // 1200+ desktop
 
 body{
-	background-color: #F2F3F4;
-	font-family: Metropolis;
+
+	font: normal normal bold 14px/14px Metropolis;
+	text-transform: uppercase;
+	letter-spacing: -0.28px;
 }
 
+
 nav { 
+	margin-top:2%;
 	padding-left: 30px;
 	display: flex;
-	background-color: rgb(197, 185, 162);
+	background-color: white ;
 	list-style: none;
 	justify-content: space-between;
 }
@@ -32,6 +36,23 @@ nav {
 }
 li {
 	list-style: none;
-	padding:20px;
+	padding:0 20px;
 	text-align: center;
+}
+a {
+	text-decoration: none;
+}
+a:visited {
+	color:black;
+}
+.navbot {
+	margin-top: 1px;
+	display: flex;
+	background-color: white;
+	border-top: 1px solid #F2F3F4;
+	align-items: center;
+	height:50px;
+}
+main{
+	background-color: #F2F3F4;
 }
