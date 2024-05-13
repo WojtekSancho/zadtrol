@@ -8,13 +8,30 @@
 // 777- mobile
 // 1200- tablet
 // 1200+ desktop
-nav{
-		background-color: red;
-		display:flex;
+
+body{
+	background-color: #F2F3F4;
+	font-family: Metropolis;
 }
-ul {
-	width:100%;
-	display:flex;
-	flex-direction: column;
-	align-items: flex-end;
+
+nav { 
+	padding-left: 30px;
+	display: flex;
+	background-color: rgb(197, 185, 162);
+	list-style: none;
+	justify-content: space-between;
+}
+.navbar{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.navbar__kosz {
+	border: 1px solid #F2F3F4;
+	margin-right: 20px;
+}
+li {
+	list-style: none;
+	padding:20px;
+	text-align: center;
 }
