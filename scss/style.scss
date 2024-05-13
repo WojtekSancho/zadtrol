@@ -18,6 +18,7 @@ body{
 .navbar img {
     margin-right: 10px;
 	vertical-align: middle;
+	
 	}
 
 
@@ -35,11 +36,18 @@ nav {
 	justify-content: flex-end;
 }
 .navbar__kosz {
-	min-height: 5%;
-	border: 1px solid #F2F3F4;
 	border-right: 10px;
+	border:1px solid #F2F3F4;
+}
+.arrow__cont{
+	display: flex;
+	background-color: #9BCB3B;
+	width: 1.8421052632vw;
+	justify-content: right;
+	align-items: center;
 	
 }
+
 .linia{
 	top: 33px;
 left: 1681px;
@@ -85,6 +93,10 @@ main{
 
 }
 .navbar .navbar__kosz img {
-	margin-right: 10px;
-	border-right: 1px solid black;
+	margin-right: 5px;
+	border-right: 1px solid #F2F3F4;
+	padding-right: 15px;
+	
+}
+.arrow {
 }
