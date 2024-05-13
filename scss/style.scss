@@ -32,6 +32,7 @@ nav {
 }
 .navbar{
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: flex-end;
 }
@@ -42,19 +43,17 @@ nav {
 .arrow__cont{
 	display: flex;
 	background-color: #9BCB3B;
-	width: 1.8421052632vw;
-	justify-content: right;
-	align-items: center;
-	
+	justify-content: center;
+	flex-direction: row;
+	min-width: 6%;
+	max-width: 6%;
+	margin-right: 3%;
+}
+.arrow{
+	align-self: center;
+
 }
 
-.linia{
-	top: 33px;
-left: 1681px;
-width: 1px;
-height: 41px;
-background: #E1E2E8 0% 0% no-repeat padding-box;
-}
 li {
 	list-style: none;
 	padding:0 20px;

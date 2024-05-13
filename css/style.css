@@ -27,6 +27,7 @@ nav {
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-end;
 }
@@ -39,9 +40,15 @@ nav {
 .arrow__cont {
   display: flex;
   background-color: #9BCB3B;
-  width: 1.8421052632vw;
-  justify-content: right;
-  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-width: 6%;
+  max-width: 6%;
+  margin-right: 3%;
+}
+
+.arrow {
+  align-self: center;
 }
 
 .linia {
