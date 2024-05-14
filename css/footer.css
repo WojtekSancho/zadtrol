@@ -226,6 +226,6 @@ body {
     padding-bottom: 79px;
   }
 }
-a:link {
+a:link, a:visited {
   color: white;
 }/*# sourceMappingURL=footer.css.map */
