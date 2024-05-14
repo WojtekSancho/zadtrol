@@ -47,16 +47,10 @@ nav {
   margin-right: 3%;
 }
 
-.arrow {
-  align-self: center;
-}
-
-.linia {
-  top: 33px;
-  left: 1681px;
-  width: 1px;
-  height: 41px;
-  background: #E1E2E8 0% 0% no-repeat padding-box;
+.navbar .navbar__kosz img {
+  margin-right: 5px;
+  border-right: 1px solid #F2F3F4;
+  padding-right: 15px;
 }
 
 li {
@@ -101,10 +95,4 @@ main {
 
 .container__slider img {
   width: 100%;
-}
-
-.navbar .navbar__kosz img {
-  margin-right: 5px;
-  border-right: 1px solid #F2F3F4;
-  padding-right: 15px;
 }/*# sourceMappingURL=style.css.map */

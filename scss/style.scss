@@ -50,6 +50,16 @@ nav {
 	margin-right: 3%;
 }
 
+.navbar .navbar__kosz img {
+	margin-right: 5px;
+	border-right: 1px solid #F2F3F4;
+	padding-right: 15px;
+	
+}
+
+.arrow {
+
+}
 
 li {
 	list-style: none;
@@ -87,12 +97,4 @@ main{
 .container__slider img{
 	width:100%;
 
-}
-.navbar .navbar__kosz img {
-	margin-right: 5px;
-	border-right: 1px solid #F2F3F4;
-	padding-right: 15px;
-	
-}
-.arrow {
 }
