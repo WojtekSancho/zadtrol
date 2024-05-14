@@ -42,7 +42,7 @@ nav {
   background-color: #9BCB3B;
   justify-content: center;
   flex-direction: row;
-  min-width: 6%;
+  min-width: 2%;
   max-width: 6%;
   margin-right: 3%;
 }

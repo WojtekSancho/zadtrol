@@ -1,0 +1,39 @@
+.slider {
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: none;
+    cursor: pointer;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    z-index: 2;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+
+div{
+	background-color: #F2F3F4;
+	display: flex;
+	justify-content: center;
+	padding: 3%;
+}
