@@ -14,7 +14,7 @@
             </main>
     <div id="footer"></div>
     <script>
-        import "js/lightbulbs.js";
+        
         fetch('navbar.html')
             .then(response => response.text())
             .then(html => {
@@ -42,6 +42,7 @@
                 document.getElementById('footer').innerHTML = html;
             })
             .catch(error => console.error('Błąd podczas pobierania pliku HTML:', error));
+            import "js/lightbulbs.js";
     </script>
     
 </body>
