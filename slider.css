@@ -1,46 +1,53 @@
+.slider {
+    width: 1860x;
+    height: 595px;
+    overflow: hidden;
+    position: relative;
+}
 
-    .slider {
-        width: 1860x;
-        height: 595px;
-        overflow: hidden;
-        position: relative;
-    }
- 
-    .slider img {
-        width: 100%;
-        height: auto;
-        display: none;
-        cursor: pointer; 
-    }
+.slider img {
+    width: 100%;
+    height: auto;
+    display: none;
+    cursor: pointer; 
+}
 
-    .prev, .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        padding: 0; 
-        border: none;
-        background: none;
-        z-index: 2;
-    }
-    .prev {
-        left: 10px;
-    }
-    .next {
-        right: 10px;
-    }
+   .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 0px solid #000; 
+    background: #a9a9a9; 
+    filter: brighteness(40%)
+    z-index: 2;
+}
+.prev {
+    left: 0px;
+    padding-left:20px;
+    
+    
+}
+.next {
+    right: 0px;
+    padding-left:20px;
+    
+}
 
-    .prev::before, .next::before {
-        content: '';
-        width: 40px;
-        height: 40px;
-        display: block;
-        background-size: cover;
-    }
-	.prev::before {
-        background-image: url('file:///C:/Users/Praktyka/OneDrive/Dokumenty/GitHub/zadtrol/images/Icon%20-%20Arrow-1.svg');
-    }
-    .next::before {
-	transform: rotate(180deg);
-        background-image: url('file:///C:/Users/Praktyka/OneDrive/Dokumenty/GitHub/zadtrol/images/Icon%20-%20Arrow-1.svg');
-    }
+.prev::before, .next::before {
+    content: '';
+    width: 10px;
+    height: 14px;
+    display: block;
+    background-size: cover;
+}
+.prev::before {
+    background-image: url('file:///C:/Users/Praktyka/OneDrive/Dokumenty/GitHub/zadtrol/images/Icon%20-%20Arrow-1.svg');
+    
+}
+.next::before {
+transform: rotate(180deg);
+    background-image: url('file:///C:/Users/Praktyka/OneDrive/Dokumenty/GitHub/zadtrol/images/Icon%20-%20Arrow-1.svg');
+}

@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Document</title>
+    <title>idkeks</title>
 </head>
 <body>
-    <div id="importedContent"></div>
+    <div id="header"></div>
+    <div id="main"></div>
+    <div id="footer"></div>
     <script>
         // Pobierz zawartość z innego pliku HTML i wstrzyknij ją do elementu
         fetch('navbar.html')
             .then(response => response.text())
             .then(html => {
-                document.getElementById('importedContent').innerHTML = html;
+                document.getElementById('header').innerHTML = html;
+            })
+            .catch(error => console.error('Błąd podczas pobierania pliku HTML:', error));
+
+            fetch('slider.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('main').innerHTML = html;
+            })
+            .catch(error => console.error('Błąd podczas pobierania pliku HTML:', error));
+
+
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
             })
             .catch(error => console.error('Błąd podczas pobierania pliku HTML:', error));
     </script>
