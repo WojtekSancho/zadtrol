@@ -71,11 +71,7 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: black;
-}
-
-a:link {
+a:visited, a:link {
   color: black;
 }
 
