@@ -28,6 +28,8 @@ nav {
 .navbar {
   display: flex;
   flex-wrap: nowrap;
+  align-self: flex-end;
+  padding-right: 15px;
 }
 
 .navbar__kosz {
@@ -43,8 +45,12 @@ nav {
 
 .navbar__arrow {
   padding-left: 0px;
+  padding-right: 0;
+  margin-right: 1%;
   align-items: center;
   background-color: #9BCB3B;
+  min-width: 1%;
+  max-width: 50%;
 }
 
 .arrow {
