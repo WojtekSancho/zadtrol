@@ -76,12 +76,11 @@ li {
 
 b {
 	text-decoration: none;
+	font-weight: normal;
 }
-b:visited {
+b:visited, b:link {
 	color:black;
-}
-b:link {	
-	color:black;
+	text-decoration: none;
 }
 b:hover{
 	cursor: pointer;

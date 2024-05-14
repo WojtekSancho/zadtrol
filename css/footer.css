@@ -120,11 +120,11 @@ body {
   height: 16px;
 }
 .footer .footer-top {
-  content: url(../svg/top.svg);
+  content: url(../static/plus.svg);
   height: 100%;
 }
 .footer .footer-bottom {
-  content: url(../svg/bottom.svg);
+  content: url(../static/minus.svg);
   height: 100%;
 }
 .footer__list {
@@ -228,4 +228,5 @@ body {
 }
 a:link, a:visited {
   color: white;
+  font-weight: normal;
 }/*# sourceMappingURL=footer.css.map */
