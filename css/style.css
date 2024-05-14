@@ -28,6 +28,7 @@ nav {
 .navbar {
   display: flex;
   flex-wrap: nowrap;
+  min-width: 50%;
 }
 
 .navbar__kosz {

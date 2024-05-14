@@ -1,3 +1,19 @@
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+#slider-container {
+  height: 300px;
+  width: 85vw;
+  max-width: 1400px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
 }/*# sourceMappingURL=lightbulbs.css.map */
