@@ -77,10 +77,12 @@ li {
 a {
 	text-decoration: none;
 }
-a:visited, a:link {
+a:visited {
 	color:black;
 }
-
+a:link {	
+	color:black;
+}
 a:hover{
 	cursor: pointer;
 }
