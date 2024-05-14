@@ -10,7 +10,7 @@
 // 1200+ desktop
 
 body{
-	margin: 0;
+	margin: 0;		
 	font: normal normal bold 14px/14px Metropolis;
 	text-transform: uppercase;
 	letter-spacing: -0.28px;
@@ -39,14 +39,8 @@ nav {
 	border-right: 10px;
 	border:1px solid #F2F3F4;
 }
-.arrow__cont{
-	display: flex;
-	background-color: #9BCB3B;
-	justify-content: center;
-	flex-direction: row;
-	min-width: 2%;
-	max-width: 6%;
-	margin-right: 3%;
+.navbar__kosz {
+	row-gap: 10px;
 }
 
 .navbar .navbar__kosz img {
@@ -61,6 +55,7 @@ nav {
 }
 
 li {
+	display: flex;
 	list-style: none;
 	padding:0 20px;
 	text-align: center;
@@ -87,13 +82,4 @@ a:hover{
 	height:50px;
 	justify-content: space-between;
 }
-main{
-	background-color: #F2F3F4;
-	display: flex;
-	justify-content: center;
-	padding: 3%;
-}
-.container__slider img{
-	width:100%;
 
-}
