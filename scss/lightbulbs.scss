@@ -15,3 +15,23 @@
     overflow:hidden;
     padding:20px;
 }
+#slider-container .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height:15px;
+    width:15px;
+    border-left: 8px solid #696969;
+    border-left: 8px solid #696969;
+    cursor:pointer;
+}
+#slider-container .btn.inactive {
+    border-color: #282828;
+}
+#slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left:10px;
+}
+#slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right:10px;
+}
