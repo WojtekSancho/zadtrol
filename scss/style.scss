@@ -32,8 +32,9 @@ nav {
 .navbar{
 	display: flex;
 	flex-wrap: nowrap;
-	min-width: 50%;
+	min-width: 20%;
 	align-self: flex-end;
+	padding-left: 0px;
 	padding-right: 15px;
 }
 
@@ -55,13 +56,14 @@ nav {
 	margin-right: 1%;
 	align-items: center;
 	background-color: #9BCB3B;
-	min-width: 1%;
+	min-width: 5%;
 	max-width: 50%;
+	justify-content: center;
 
 }
 
 .arrow {
-	align-self: center;
+	margin-right: 0px !important;
 }
 
 li {
@@ -93,5 +95,3 @@ a:hover{
 	height:50px;
 	justify-content: space-between;
 }
-
-//nigger
