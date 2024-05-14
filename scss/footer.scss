@@ -1,3 +1,7 @@
+@use'../scss/fonts';
+@use '../scss/variables';
+
+
 .body{
     font-family: 'Metropolis', sans-serif;
 }
@@ -9,7 +13,7 @@
     padding: 0px 10px 30px;
 }
 
-&__mobile-view-btn{
+.footer__mobile-view-btn{
     height: 16px;
 }
 
@@ -23,7 +27,7 @@
     height: 100%;
 }
 
-&__list {
+.footer__list {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
@@ -31,13 +35,13 @@
     padding: 16px;
 }
 
-&__item{
+.footer__item{
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
 
-&__heading {
+.footer__heading {
     text-align: start;
     padding: 10px 0 0;
     font-weight: variables.$bold;
@@ -45,7 +49,7 @@
     justify-content: space-between;
 }
 
-&__line{
+.footer__line{
     width: 100%;
     padding: 20px 0px 40px;
 
@@ -56,29 +60,92 @@
 }
 
 
-&__line-color-red{
+.footer__line-color-red{
     background-color: #F74137;
     width: 7%;
     opacity: 1;
 }
 
-&__line-color-whtie{
+.footer__line-color-whtie{
     background-color: #FFF;
     width: 93%;
     opacity: 0.4;
 }
 
-&__nested-list{
+.footer__nested-list{
     flex-direction: column;
     list-style: none;
     display: none;
 }
 
-&__nested-list-item{
+.footer__nested-list-item{
     margin: 0px;
 }
 
-&__nested-list-item-paragraph{
+.footer__nested-list-item-paragraph{
     text-align: start;
-    padding: 10px 15px;
+    padding: 15px 0px;
+}
+
+.footer__nested-list-item-anchor{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: variables.$regular;
+}
+
+.copyright{
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+}
+
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.footer__item{
+    list-style: none;
+    text-align: center;
+    font-weight: variables.$regular;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        .footer__mobile-view-btn {
+            display: none;
+        }
+
+        .footer__btn-icon {
+            display: none;
+        }
+
+        .footer__list {
+            flex-direction: row;
+            width: 100%;
+            padding: 0;
+        }
+
+        .footer__item {
+            width: 90%;
+        }
+
+        .footer__nested-List {
+            display: block !important;
+        }
+    }
+
+    .copyright {
+        .footer {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .copyright {
+        padding-bottom: 79px;
+    }
 }

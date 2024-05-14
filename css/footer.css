@@ -1,3 +1,111 @@
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/metropolis-thin-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 100;
+  src: url("/fonts/metropolis-thinitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/metropolis-extralight-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 200;
+  src: url("/fonts/metropolis-extralightitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/metropolis-light-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 300;
+  src: url("/fonts/metropolis-lightitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/metropolis-regular-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/metropolis-regularitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/metropolis-medium-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 500;
+  src: url("/fonts/metropolis-mediumitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/metropolis-semibold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 600;
+  src: url("/fonts/metropolis-semibolditalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/metropolis-bold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/metropolis-bolditalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/metropolis-extrabold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 800;
+  src: url("/fonts/metropolis-extrabolditalic-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/metropolis-black-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "metropolis";
+  font-style: italic;
+  font-weight: 900;
+  src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
+}
 .body {
   font-family: "Metropolis", sans-serif;
 }
@@ -7,4 +115,129 @@
   color: #FFF;
   font-size: 4px;
   padding: 0px 10px 30px;
+}
+
+.footer__mobile-view-btn {
+  height: 16px;
+}
+
+.footer-plus {
+  content: url(./svg/plus.svg);
+  height: 100%;
+}
+
+.footer-minus {
+  content: url(./svg/minus.svg);
+  height: 100%;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.footer__heading {
+  text-align: start;
+  padding: 10px 0 0;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__line {
+  width: 100%;
+  padding: 20px 0px 40px;
+}
+.footer__line .line {
+  float: left;
+  height: 1px;
+}
+
+.footer__line-color-red {
+  background-color: #F74137;
+  width: 7%;
+  opacity: 1;
+}
+
+.footer__line-color-whtie {
+  background-color: #FFF;
+  width: 93%;
+  opacity: 0.4;
+}
+
+.footer__nested-list {
+  flex-direction: column;
+  list-style: none;
+  display: none;
+}
+
+.footer__nested-list-item {
+  margin: 0px;
+}
+
+.footer__nested-list-item-paragraph {
+  text-align: start;
+  padding: 15px 0px;
+}
+
+.footer__nested-list-item-anchor {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 400;
+}
+
+.copyright {
+  background-color: white;
+  color: black;
+  padding: 20px 30px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.footer__item {
+  list-style: none;
+  text-align: center;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .footer .footer__mobile-view-btn {
+    display: none;
+  }
+  .footer .footer__btn-icon {
+    display: none;
+  }
+  .footer .footer__list {
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+  }
+  .footer .footer__item {
+    width: 90%;
+  }
+  .footer .footer__nested-List {
+    display: block !important;
+  }
+  .copyright .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  .copyright {
+    padding-bottom: 79px;
+  }
 }/*# sourceMappingURL=footer.css.map */
