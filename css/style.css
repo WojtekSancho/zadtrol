@@ -67,19 +67,19 @@ li {
   align-items: center;
 }
 
-a {
+b {
   text-decoration: none;
 }
 
-a:visited {
+b:visited {
   color: black;
 }
 
-a:link {
+b:link {
   color: black;
 }
 
-a:hover {
+b:hover {
   cursor: pointer;
 }
 
