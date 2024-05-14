@@ -53,6 +53,10 @@ nav {
   padding-right: 15px;
 }
 
+.arrow {
+  background-color: #9BCB3B;
+}
+
 li {
   list-style: none;
   padding: 0 20px;

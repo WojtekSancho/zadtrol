@@ -1,39 +1,46 @@
-.slider {
-    width: 1000px;
-    height: 500px;
-    overflow: hidden;
-    position: relative;
-}
 
-.slider img {
-    width: 100%;
-    height: auto;
-    display: none;
-    cursor: pointer;
-}
+    .slider {
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+    }
+ 
+    .slider img {
+        width: 100%;
+        height: auto;
+        display: none;
+        cursor: pointer; 
+    }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: white;
-    font-size: 20px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    z-index: 2;
-}
-.prev {
-    left: 0;
-}
-.next {
-    right: 0;
-}
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        padding: 0; 
+        border: none;
+        background: none;
+        z-index: 2;
+    }
+    .prev {
+        left: 10px;
+    }
+    .next {
+        right: 10px;
+    }
 
-div{
-	background-color: #F2F3F4;
-	display: flex;
-	justify-content: center;
-	padding: 3%;
-}
+    .prev::before, .next::before {
+        content: '';
+        width: 40px;
+        height: 40px;
+        display: block;
+        background-size: cover;
+    }
+	.prev::before {
+        background-image: url('file:///C:/Users/maxmo/Documents/GitHub/projekttrol/left.svg');
+    }
+    .next::before {
+	transform: rotate(180deg);
+        background-image: url('file:///C:/Users/maxmo/Documents/GitHub/projekttrol/right.svg');
+    }
