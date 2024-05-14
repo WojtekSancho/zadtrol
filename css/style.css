@@ -9,6 +9,7 @@ body {
   font: normal normal 14px/14px Metropolis;
   text-transform: uppercase;
   letter-spacing: -0.28px;
+  background-color: #F2F3F4;
 }
 
 .navbar img {
