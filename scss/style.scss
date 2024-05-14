@@ -22,12 +22,15 @@ body{
 
 
 nav { 
+	display: flex;
 	margin-top:2%;
 	padding-left: 30px;
-	display: flex;
 	background-color: white ;
 	list-style: none;
 	justify-content: space-between;
+}
+.logo{
+	
 }
 .navbar{
 	display: flex;
