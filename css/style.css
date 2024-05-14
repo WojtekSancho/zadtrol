@@ -35,6 +35,7 @@ nav {
 }
 
 .navbar__kosz {
+  width: 40%;
   border-right: 10px;
   border: 1px solid #F2F3F4;
   row-gap: 10px;
