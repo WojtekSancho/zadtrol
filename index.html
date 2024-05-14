@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>idkeks</title>
+    <title>Elhurt+</title>
 </head>
 <body>
     <div id="header"></div>
-    <div id="main"></div>
+    <div id="slider"></div>
     <div id="footer"></div>
     <script>
-        // Pobierz zawartość z innego pliku HTML i wstrzyknij ją do elementu
         fetch('navbar.html')
             .then(response => response.text())
             .then(html => {
@@ -22,7 +21,7 @@
             fetch('slider.html')
             .then(response => response.text())
             .then(html => {
-                document.getElementById('main').innerHTML = html;
+                document.getElementById('slider').innerHTML = html;
             })
             .catch(error => console.error('Błąd podczas pobierania pliku HTML:', error));
 

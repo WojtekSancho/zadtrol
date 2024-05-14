@@ -1,143 +1,146 @@
-@use'../scss/fonts';
+@use '../scss/fonts';
 @use '../scss/variables';
 
+// * {
+//     padding: 0;
+//     margin: 0;
+// }
 
-.body{
+body {
     font-family: 'Metropolis', sans-serif;
 }
 
-.footer{
+.footer {
     background-color: #393E40;
     color: #FFF;
-    font-size: 4px;
-    padding: 0px 10px 30px;
-}
+    font-size: 14px;
+    padding: 0 10px 30px;
 
-.footer__mobile-view-btn{
-    height: 16px;
-}
+    &__mobileViewBtn {
+        height: 16px;
+    }
 
-.footer-plus {
-    content: url(./svg/plus.svg);
-    height: 100%;
-}
+    .footer-plus {
+        content: url(../static/plus.svg);
+        height: 100%;
+    }
 
-.footer-minus{
-    content: url(./svg/minus.svg);
-    height: 100%;
-}
+    .footer-minus {
+        content: url(../static/minus.svg);
+        height: 100%;
+    }
 
-.footer__list {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    flex-direction: column;
-    padding: 16px;
-}
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        flex-direction: column;
+        padding: 16px;
+    }
 
-.footer__item{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
+    &__listItem {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
 
-.footer__heading {
-    text-align: start;
-    padding: 10px 0 0;
-    font-weight: variables.$bold;
-    display: flex;
-    justify-content: space-between;
-}
+    &__heading {
+        text-align: start;
+        padding: 10px 0 0;
+        font-weight: variables.$bold;
+        display: flex;
+        justify-content: space-between;
+    }
 
-.footer__line{
-    width: 100%;
-    padding: 20px 0px 40px;
+    &__line {
+        width:100%;
+        padding: 20px 0 40px;
 
-    .line{
-        float: left;
-        height: 1px;
+        .line {
+            float:left;
+            height:1px;
+        }
+    }
+
+    &__lineColorRed {
+        background-color: #F74137;
+        width: 7%;
+        opacity: 1;
+    }
+
+    &__lineColorWhite {
+        background-color: #FFF;
+        width: 93%;
+        opacity: 0.2;
+    }
+
+    &__nestedList {
+        flex-direction: column;
+        list-style: none;
+        display: none;
+    }
+
+    &__nestedListItem {
+        margin: 0;
+    }
+
+    &__nestedListItemParagraph {
+        text-align: start;
+        padding: 15px 0;
+    }
+
+    &__nestedListItemAnchor {
+        text-decoration: none;
+        color: #FFF;
+        font-weight: variables.$regular;
     }
 }
 
-
-.footer__line-color-red{
-    background-color: #F74137;
-    width: 7%;
-    opacity: 1;
-}
-
-.footer__line-color-whtie{
+.copyright {
     background-color: #FFF;
-    width: 93%;
-    opacity: 0.4;
-}
+    color: #111;
+    padding: 22px 30px;
 
-.footer__nested-list{
-    flex-direction: column;
-    list-style: none;
-    display: none;
-}
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
 
-.footer__nested-list-item{
-    margin: 0px;
-}
-
-.footer__nested-list-item-paragraph{
-    text-align: start;
-    padding: 15px 0px;
-}
-
-.footer__nested-list-item-anchor{
-    text-decoration: none;
-    color: #FFF;
-    font-weight: variables.$regular;
-}
-
-.copyright{
-    background-color: white;
-    color: black;
-    padding: 20px 30px;
-}
-
-.footer__list{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-}
-
-.footer__item{
-    list-style: none;
-    text-align: center;
-    font-weight: variables.$regular;
+    &__listItem {
+        list-style: none;
+        text-align: center;
+        font-weight: variables.$regular;
+    }
 }
 
 @media (min-width: 768px) {
     .footer {
-        .footer__mobile-view-btn {
+        &__mobileViewBtn {
             display: none;
         }
 
-        .footer__btn-icon {
+        &__btnIcon {
             display: none;
         }
 
-        .footer__list {
+        &__list {
             flex-direction: row;
             width: 100%;
             padding: 0;
         }
 
-        .footer__item {
+        &__listItem {
             width: 90%;
         }
 
-        .footer__nested-List {
+        &__nestedList {
             display: block !important;
         }
     }
 
     .copyright {
-        .footer {
+        &__list {
             flex-direction: row;
             justify-content: space-between;
         }

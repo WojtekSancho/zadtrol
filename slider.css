@@ -22,7 +22,7 @@
     border: 0px solid #000; 
     background: #a9a9a9; 
     filter: brighteness(40%)
-    z-index: 2;
+    
 }
 .prev {
     left: 0px;
@@ -44,10 +44,10 @@
     background-size: cover;
 }
 .prev::before {
-    background-image: url('file:///C:/Users/Praktyka/OneDrive/Dokumenty/GitHub/zadtrol/images/Icon%20-%20Arrow-1.svg');
+    background-image: url('Icon - Arrow.svg');
     
 }
 .next::before {
 transform: rotate(180deg);
-    background-image: url('file:///C:/Users/Praktyka/OneDrive/Dokumenty/GitHub/zadtrol/images/Icon%20-%20Arrow-1.svg');
+    background-image: url('Icon - Arrow.svg');
 }
