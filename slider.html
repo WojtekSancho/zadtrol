@@ -1,18 +1,21 @@
-<html lang="pl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Slider</title>
+<title>Responsive Slider</title>
 <link rel="stylesheet" href="slider.css">
 </head>
 <body>
 
-<div class="slider">
-    <img src="./images/Group 40.png" alt="Image 1" onclick="changeSlide(1)">
-    <img src="./images/Mask Group 40.png" alt="Image 2" onclick="changeSlide(1)">
-    <img src="./images/Mask Group 40.png" alt="Image 3" onclick="changeSlide(1)">
-    <button class="prev" onclick="changeSlide(1)"></button>
-    <button class="next" onclick="changeSlide(1)"></button>
+<div class="slider-container">
+    <div class="slider">
+        <img src="./images/Group 40.png" alt="Image 1"onclick="nextSlide()">
+        <img src="./images/Mask Group 40.png" alt="Image 2"onclick="nextSlide()">
+        <img src="./images/Mask Group 40.png" alt="Image 3"onclick="nextSlide()">
+    </div>
+    <button class="prev" onclick="nextSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
 </div>
 
 <script>
@@ -22,17 +25,22 @@
     function showSlides() {
         let slides = document.querySelectorAll('.slider img');
         for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+            slides[i].style.display = "none";
         }
         slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        slides[slideIndex-1].style.display = "block";  
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
     }
 
-    function changeSlide(n) {
-        showSlides(slideIndex += n);
+    function prevSlide() {
+        slideIndex -= 1;
+        showSlides();
     }
-	
+
+    function nextSlide() {
+        slideIndex += 1;
+        showSlides();
+    }
 </script>
 
 </body>
