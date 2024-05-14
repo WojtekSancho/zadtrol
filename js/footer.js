@@ -16,7 +16,8 @@ function toggleElementVisibility1() {
         x.style.display = "block";
     }
 }
-function toggleElementVisibility1() {
+
+function toggleElementVisibility2() {
     let x = document.getElementById("footer__mobileView2");
     if (x.style.display === "block") {
         document.getElementById("changeIcon2").classList.add('footer-top');
@@ -25,7 +26,6 @@ function toggleElementVisibility1() {
         document.getElementById("changeIcon2").classList.toggle('footer-top');
 
         x.style.display = "none";
-
     } else {
         document.getElementById("changeIcon2").classList.add('footer-bottom');
         document.getElementById("changeIcon2").classList.remove('footer-top');
@@ -35,7 +35,8 @@ function toggleElementVisibility1() {
         x.style.display = "block";
     }
 }
-function toggleElementVisibility1() {
+
+function toggleElementVisibility3() {
     let x = document.getElementById("footer__mobileView3");
     if (x.style.display === "block") {
         document.getElementById("changeIcon3").classList.add('footer-top');
@@ -44,7 +45,6 @@ function toggleElementVisibility1() {
         document.getElementById("changeIcon3").classList.toggle('footer-top');
 
         x.style.display = "none";
-
     } else {
         document.getElementById("changeIcon3").classList.add('footer-bottom');
         document.getElementById("changeIcon3").classList.remove('footer-top');
@@ -54,7 +54,8 @@ function toggleElementVisibility1() {
         x.style.display = "block";
     }
 }
-function toggleElementVisibility1() {
+
+function toggleElementVisibility4() {
     let x = document.getElementById("footer__mobileView4");
     if (x.style.display === "block") {
         document.getElementById("changeIcon4").classList.add('footer-top');
@@ -63,7 +64,6 @@ function toggleElementVisibility1() {
         document.getElementById("changeIcon4").classList.toggle('footer-top');
 
         x.style.display = "none";
-
     } else {
         document.getElementById("changeIcon4").classList.add('footer-bottom');
         document.getElementById("changeIcon4").classList.remove('footer-top');

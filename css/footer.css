@@ -120,11 +120,11 @@ body {
   height: 16px;
 }
 .footer .footer-top {
-  content: url(../static/plus.svg);
+  content: url(../svg/top.svg);
   height: 100%;
 }
 .footer .footer-bottom {
-  content: url(../static/minus.svg);
+  content: url(../svg/bottom.svg);
   height: 100%;
 }
 .footer__list {
