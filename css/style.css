@@ -41,13 +41,14 @@ nav {
   border-right: 1px solid #F2F3F4;
 }
 
-.navbar_arrow {
+.navbar__arrow {
+  padding-left: 0px;
+  align-items: center;
   background-color: #9BCB3B;
 }
 
 .arrow {
-  padding-left: 0px;
-  background-color: #9BCB3B;
+  align-self: center;
 }
 
 li {
