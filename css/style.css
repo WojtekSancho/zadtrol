@@ -36,7 +36,6 @@ nav {
   top: 0px;
   left: 0;
   right: 0px;
-  width: 100%;
   z-index: 1;
 }
 
@@ -46,7 +45,6 @@ nav {
   min-width: 35%;
   justify-content: flex-end;
   padding: 0;
-  margin-right: 60px;
 }
 
 .navbar__kosz {
@@ -131,11 +129,12 @@ c {
   min-width: 69px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1001px) {
   .navbar, .navbot {
     display: none;
   }
   .nav {
-    justify-content: center;
+    border-bottom: 5px solid #9BCB3B;
+    background-color: #9BCB3B;
   }
 }/*# sourceMappingURL=style.css.map */
