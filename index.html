@@ -6,13 +6,8 @@
     
     <title>Elhurt+</title>
 </head>
-<style>
-    body{
-        background-color: #F2F3F4;
-    }
-</style>
 <body>
-    <div id="navbar"></div>
+    <div id="header"></div>
             <main>
                 <div id="slider"></div>
                 <div id="products"></div>
@@ -22,7 +17,7 @@
         fetch('navbar.html')
             .then(response => response.text())
             .then(html => {
-                document.getElementById('navbar').innerHTML = html;
+                document.getElementById('header').innerHTML = html;
             })
             .catch(error => console.error('Błąd podczas pobierania pliku HTML:', error));
 

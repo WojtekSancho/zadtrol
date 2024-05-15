@@ -18,7 +18,7 @@ minus.addEventListener('click', () => {
 })
 
 var container = document.getElementById('container')
-var slider = document.getElementById('slider')
+var slider = document.getElementById('bulb-slider')
 var slides = document.getElementsByClassName('slide').length
 var buttons = document.getElementsByClassName('btn')
 
