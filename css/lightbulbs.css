@@ -55,13 +55,13 @@ h2 {
 }
 
 #slider-container {
-  height: 500px;
-  width: 85vw;
-  max-width: 1400px;
-  position: relative;
-  overflow: hidden;
-  padding: 20px;
-  border: 1px solid black;
+	height: 500px;
+	width: 100vw;
+	max-width: 1500px;
+	position: relative;
+	overflow: hidden;
+	padding: 20px;
+	border: 1px solid black;
 }
 
 #slider-container .btn {
@@ -103,7 +103,11 @@ h2 {
 	display: grid;
 	place-items: center;
 }
-
+#slider-container #slider img {
+	display: block;
+	width: 40%;
+	margin: 20px auto 0;
+}
 
 @media only screen and (min-width: 1100px) {
 	#slider-container #slider .slide {
@@ -181,3 +185,5 @@ h2 {
 	position: absolute;
 	right: 400px;
 }
+
+/*# sourceMappingURL=lightbulbs.css.map */
