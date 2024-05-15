@@ -40,7 +40,7 @@
         position: absolute;
         top:  35%;
         left: 10%;
-		font-family: sans-serif;
+		font-family: 'Metropolis', sans-serif;
 		transition: transform 0.9s ease; 
 		color:white;
 		 font-size: 170%; 
