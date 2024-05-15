@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Slider</title>
-<link rel="stylesheet" href="slider.css">
-<script src="./js/javascript.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <title>Responsive Slider</title>
 </head>
 <body>
-
-<div class="slider-container">
-    <div class="slider">
-        <img src="./images/Group 40.png" alt="Image 1"onclick="nextSlide()">
-        <img src="./images/Mask Group 40.png" alt="Image 2"onclick="nextSlide()">
-        <img src="./images/Mask Group 40.png" alt="Image 3"onclick="nextSlide()">
+    <div class="Slider">
+        <div class="SliderItem">
+            <div class="SliderItemNumber">
+                <img class="SliderItemImage" src="./images/Group 40.png" alt="Image 1">
+            </div>
+        </div>
+        <div class="SliderItem">
+            <div class="SliderItemNumber">
+                <img class="SliderItemImage" src="./images/Mask Group 40.png" alt="Image 2">
+            </div>
+        </div>
+        <a class="Slider__buttonBack" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="Slider__buttonNext" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <button class="prev" onclick="nextSlide()">&#10094;</button>
-    <button class="next" onclick="nextSlide()">&#10095;</button>
-</div>
-
+    <script src="./js/slider.js"></script>
 </body>
 </html>
