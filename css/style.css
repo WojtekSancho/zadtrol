@@ -31,6 +31,8 @@ nav {
   background-color: white;
   list-style: none;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 
 .navbar {
@@ -72,6 +74,11 @@ nav {
 
 .arrow {
   margin-right: 0px !important;
+}
+
+.navbot {
+  position: sticky;
+  top: 70px;
 }
 
 li {
@@ -116,4 +123,10 @@ c {
   font-family: Metropolis-light;
   text-transform: lowercase;
   min-width: 69px;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
