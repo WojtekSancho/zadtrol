@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Metropolis-light";
+  src: url(../fonts/Metropolis-Light.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin: 0;
   font: normal normal 14px/14px Metropolis;
@@ -40,6 +46,7 @@ nav {
   padding: 6px 10px;
   padding-top: 6px;
   padding-bottom: 6px;
+  max-height: 36px;
 }
 
 .navbar .navbar__kosz img {
@@ -95,4 +102,17 @@ b:hover {
   align-items: center;
   height: 50px;
   justify-content: space-between;
+}
+
+d {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  width: 100%;
+}
+
+c {
+  font-family: Metropolis-light;
+  text-transform: lowercase;
+  min-width: 69px;
 }/*# sourceMappingURL=style.css.map */
