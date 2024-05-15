@@ -107,7 +107,7 @@
   src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
 body {
-  font-family: "Metropolis", sans-serif;
+  font-family: "Metropolis-light", sans-serif;
 }
 
 .footer {
@@ -227,6 +227,7 @@ body {
   }
 }
 a:link, a:visited {
+  text-transform: none;
   color: white;
   font-weight: normal;
 }/*# sourceMappingURL=footer.css.map */
