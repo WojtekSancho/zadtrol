@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face{
+	font-family: 'Metropolis-light';
+    src: url(../fonts/Metropolis-Light.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 // 985- mobile
 // 1200- tablet
@@ -14,6 +20,7 @@ body{
 	font: normal normal 14px/14px Metropolis;
 	text-transform: uppercase;
 	letter-spacing: -0.28px;
+	background-color: white;
 }
 .navbar img {
     margin-right: 10px;
@@ -23,13 +30,17 @@ body{
 
 nav { 
 	display: flex;
-	
-	margin-top:2%;
+	padding-top:20px;
+	padding-bottom: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
 	background-color: white ;
 	list-style: none;
 	justify-content: space-between;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
 }
 
 .navbar{	
@@ -47,6 +58,7 @@ nav {
 	padding: 6px 10px;
 	padding-top: 6px;
 	padding-bottom: 6px;
+	max-height: 36px;
 }
 
 .navbar .navbar__kosz img {
@@ -68,7 +80,10 @@ nav {
 	min-width: 30px;
 	width: 30px;
 	max-width: 50%;
+	height: 49px;
 	justify-content: center;
+	margin-right: 60px;
+	  
 
 }
 
@@ -103,4 +118,28 @@ b:hover{
 	align-items: center;
 	height:50px;
 	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	top: 96px;
+}
+
+d{
+	display: flex;
+	flex-direction: column;
+	margin-right: 15px;
+	width: 100%;
+	
+}
+c{
+	font-family: Metropolis-light;
+	text-transform: lowercase;
+	min-width: 69px;
+}
+
+@media (max-width: 900px) {
+	.navbar {
+		display: none;
+	}
+
 }
