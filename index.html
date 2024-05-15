@@ -3,45 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/lightbulbs.css">
     <title>Elhurt+</title>
 </head>
 <body>
-    <div id="header"></div>
-            <main>
-                <div id="slider"></div>
-                <div id="products"></div>
-            </main>
-    <div id="footer"></div>
-    <script>
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('header').innerHTML = html;
-            })
-            .catch(error => console.error('Błąd podczas pobierania pliku HTML:', error));
-
-            fetch('slider.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('slider').innerHTML = html;
-            })
-            .catch(error => console.error('Błąd podczas pobierania pliku HTML:', error));
-            fetch('lightbulbs.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('products').innerHTML = html;
-            })
-            .catch(error => console.error('Błąd podczas pobierania pliku HTML:', error));
+<header>    
+    <nav>
+    <img class="logo" src="./images/logo.svg" alt="logo">
+    <ul class="navbar">
+             <li><img src="./images/Group 4915.svg" alt="📞">Kontakt</li>
+             <li><img src="./images/Group 4922.svg" alt="⭐">Ulubione</li>
+             <li><img src="./images/Group 4924.svg" alt="🙍‍♂️">Moje Konto</li>
+             <li class="navbar__kosz"><img src="./images/Group 4934.svg"><d>Twój Koszyk<C>3456,00 zł</C></d></li>
+               <li class="navbar__arrow">
+                <img src="./images/Path 1134.svg" class="arrow" alt=">"></li>
+    </ul>           
+</nav>
+<ul class="navbot">
+    <li><b href="" >ŹRÓDŁA ŚWIATŁA</b></li>
+    <li><b href="" >OŚWIETLENIE WEWNĘTRZNE</b></li>
+    <li><b href="" >GNIAZDKA, WYŁĄCZNIKI</b></li>
+    <li><b href="" >AUTOMATYKA, STEROWANIE</b></li>
+    <li><b href="" >ROZDZIELNIE I APARATURA</b></li> 
+    <li><b href="" >MATERIAŁY INSTALACYJNE</b></li>   
+</ul>
+</header>
 
 
-            fetch('footer.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('footer').innerHTML = html;
-            })
-            .catch(error => console.error('Błąd podczas pobierania pliku HTML:', error));
-    </script>
 
+
+
+
+<main>
+    <section>
+        <h2>Polecane produkty</h2>
+        <div class="czerwony"></div>
+        <div id="container">
+            <div id="slider-container">
+                <span onclick="slideRight()" class="btn right"></span>
+                <div id="bulb-slider">
+                    <div class="slide"><img src="./images/Image 149.png" alt=""><span>Łącznik Jednobiegunowy</span>
+                        <h4>Kod produktu: CW1.01/11 </h4>
+                        <h5>656,65zł</h5>
+                        <h4>442,85zł</h4>
+                        <div class="wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">01</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="basket-next-price"><img src="./images/Group 4934.svg"></div>
+                    </div>
+                    <div class="slide"><img src="./images/Image 149.png" alt=""><span>Łącznik Jednobiegunowy</span>
+                        <h4>Kod produktu: CW1.01/11 </h4>
+                        <h5>656,65zł</h5>
+                        <h4>442,85zł</h4>
+                        <div class="wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">01</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="basket-next-price"><img src="./images/Group 4934.svg"></div>
+                    </div>
+                    <div class="slide"><img src="./images/Image 149.png" alt=""><span>Łącznik Jednobiegunowy</span>
+                        <h4>Kod produktu: CW1.01/11 </h4>
+                        <h5>656,65zł</h5>
+                        <h4>442,85zł</h4>
+                        <div class="wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">01</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="basket-next-price"><img src="./images/Group 4934.svg"></div>
+                    </div>
+                    <div class="slide"><img src="./images/Image 149.png" alt=""><span>Łącznik Jednobiegunowy</span>
+                        <h4>Kod produktu: CW1.01/11 </h4>
+                        <h5>656,65zł</h5>
+                        <h4>442,85zł</h4>
+                        <div class="wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">01</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="basket-next-price"><img src="./images/Group 4934.svg"></div>
+                    </div>
+                    <div class="slide"><img src="./images/Image 149.png" alt=""><span>Łącznik Jednobiegunowy</span>
+                        <h4>Kod produktu: CW1.01/11 </h4>
+                        <h5>656,65zł</h5>
+                        <h4>442,85zł</h4>
+                        <div class="wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">01</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="basket-next-price"><img src="./images/Group 4934.svg"></div>
+                    </div>
+                    <div class="slide"><img src="./images/Image 149.png" alt=""><span>Łącznik Jednobiegunowy</span>
+                        <h4>Kod produktu: CW1.01/11 </h4>
+                        <h5>656,65zł</h5>
+                        <h4>442,85zł</h4>
+                        <div class="wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">01</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="basket-next-price"><img src="./images/Group 4934.svg"></div>
+                    </div>
+                    <div class="slide"><img src="./images/Image 149.png" alt=""><span>Łącznik Jednobiegunowy</span>
+                        <h4>Kod produktu: CW1.01/11 </h4>
+                        <h5>656,65zł</h5>
+                        <h4>442,85zł</h4>
+                        <div class="wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">01</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="basket-next-price"><img src="./images/Group 4934.svg"></div>
+                    </div>
+                    <div class="slide"><img src="./images/Image 149.png" alt=""><span>Łącznik Jednobiegunowy</span>
+                        <h4>Kod produktu: CW1.01/11 </h4>
+                        <h5>656,65zł</h5>
+                        <h4>442,85zł</h4>
+                        <div class="wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">01</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="basket-next-price"><img src="./images/Group 4934.svg"></div>
+                    </div>
+                    <div class="slide"><img src="./images/Image 149.png" alt=""><span>Łącznik Jednobiegunowy</span>
+                        <h4>Kod produktu: CW1.01/11 </h4>
+                        <h5>656,65zł</h5>
+                        <h4>442,85zł</h4>
+                        <div class="wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">01</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="basket-next-price"><img src="./images/Group 4934.svg"></div>
+                    </div>
+                </div>
+                <span onclick="slideLeft()" class="btn left"></span>
+            </div>
+        </div>
+        <button>Zobacz wszystkie inspiracje</button>
+    </section>
+    <script src="/js/lightbulbs.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__listItem">
+                <p class="footer__heading">
+                    INFORMACJE
+                    <a class="footer__mobileViewBtn icon" href="javascript:void(0);" onclick="toggleElementVisibility1()">
+                        <i class="footer__btnIcon footer-top" id="changeIcon1"></i>
+                    </a>
+                </p>
+                <div class="footer__line">
+                    <span class="footer__lineColorRed line"></span>
+                    <span class="footer__lineColorWhite line"></span>
+                </div>
+                <div id="footer__mobile1">
+                    <ul class="footer__nestedList" id="footer__mobileView1">
+                        <li class="footer__nestedListItem">
+                        <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Informacje o sklepie</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Porady</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Blog</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Galeria inspiracji</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Kontakt</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Informacje o sklepie</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="footer__listItem information">
+                <p class="footer__heading">
+                    INFORMACJE
+                    <a class="footer__mobileViewBtn icon" href="javascript:void(0);" onclick="toggleElementVisibility2()">
+                        <i class="footer__btnIcon footer-top" id="changeIcon2"></i>
+                    </a>
+                </p>
+                <div class="footer__line">
+                    <span class="footer__lineColorRed line"></span>
+                    <span class="footer__lineColorWhite line"></span>
+                </div>
+                <div id="footer__mobile2">
+                    <ul class="footer__nestedList" id="footer__mobileView2">
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Czas realizacji</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Koszty przesyłki</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Zamów próbkę</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Szycie na wymiar</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Czas realizacji</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Koszty przesyłki</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="footer__listItem information">
+                <p class="footer__heading">
+                    MOJE KONTO
+                    <a class="footer__mobileViewBtn icon" href="javascript:void(0);" onclick="toggleElementVisibility3()">
+                        <i class="footer__btnIcon footer-top" id="changeIcon3"></i>
+                    </a>
+                </p>
+                <div class="footer__line">
+                    <span class="footer__lineColorRed line"></span>
+                    <span class="footer__lineColorWhite line"></span>
+                </div>
+                <div id="footer__mobile3">
+                    <ul class="footer__nestedList" id="footer__mobileView3">
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Logowanie</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Rejestracja</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Zamównienia</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Ustawienia konta</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Zmiana hasła</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Schowek</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="footer__listItem information">
+                <p class="footer__heading">
+                    INFORMACJE
+                    <a class="footer__mobileViewBtn icon" href="javascript:void(0);" onclick="toggleElementVisibility4()">
+                        <i class="footer__btnIcon footer-top" id="changeIcon4"></i>
+                    </a>
+                </p>
+                <div class="footer__line">
+                    <span class="footer__lineColorRed line"></span>
+                    <span class="footer__lineColorWhite line"></span>
+                </div>
+                <div id="footer__mobile4">
+                    <ul class="footer__nestedList" id="footer__mobileView4">
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Informacje o sklepie</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Porady</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Blog</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Galeria inspiracji</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Kontakt</a></p>
+                        </li>
+                        <li class="footer__nestedListItem">
+                            <p class="footer__nestedListItemParagraph"><a href="#" class="footer__nestedListItemAnchor">Informacje o sklepie</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </footer>
+    <div class="copyright">
+        <ul class="copyright__list">
+            <li class="copyright__listItem">Copyright 2022. Wszystkie prawa zastrzeżone</li>
+            <li class="copyright__listItem">Agencja interaktywna [ti] Powered by 2ClickShop</li>
+        </ul>
+    </div>
 </body>
 </html>
