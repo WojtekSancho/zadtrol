@@ -39,16 +39,19 @@ nav {
 	justify-content: space-between;
 	position: fixed;
 	top: 0px;
+	left: 0;
+	right: 0px;
 	width: 100%;
 	z-index: 1;
 }
 
-.navbar{	
+.navbar{		
 	display: flex;
 	flex-wrap: nowrap;
 	min-width: 35%;
 	justify-content: flex-end;
 	padding: 0;
+	margin-right: 60px;
 	
 }
 
@@ -78,13 +81,10 @@ nav {
 	align-items: center;
 	background-color: #9BCB3B;
 	min-width: 30px;
-	width: 30px;
-	max-width: 50%;
+	width: 60px;
+	max-width: 35px;
 	height: 49px;
 	justify-content: center;
-	margin-right: 60px;
-	  
-
 }
 
 .arrow {
@@ -117,7 +117,7 @@ b:hover{
 	border-top: 1px solid #F2F3F4;
 	align-items: center;
 	height:50px;
-	justify-content: space-between;
+	justify-content: space-around;
 	position: fixed;
 	width: 100%;
 	z-index: 1;
@@ -138,8 +138,11 @@ c{
 }
 
 @media (max-width: 900px) {
-	.navbar {
+	.navbar, .navbot {
 		display: none;
+	}
+	.nav{
+		justify-content: center;
 	}
 
 }
