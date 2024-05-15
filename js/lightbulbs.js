@@ -17,9 +17,9 @@ minus.addEventListener('click', () => {
 	}
 })
 
-var container = document.getElementById('container')
+var container = document.getElementById('main-card')
 var slider = document.getElementById('bulb-slider')
-var slides = document.getElementsByClassName('slide').length
+var slides = document.getElementsByClassName('container-card').length
 var buttons = document.getElementsByClassName('btn')
 
 var currentPosition = 0

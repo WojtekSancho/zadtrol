@@ -6,13 +6,84 @@ html, body{
   background: #eee;
   font-family: sans-serif;
 }
-.container-card{
+.btn {
+	position: absolute;
+	top: calc(50% - 10px);
+	height: 15px;
+	width: 15px;
+	border-top: 8px solid #696969;
+	border-left: 8px solid #696969;
+	cursor: pointer;
+}
+.btn:first-of-type {
+	transform: rotate(-45deg);
+	left: 10px;
+  z-index:10;
+}
+.btn:last-of-type {
+	transform: rotate(135deg);
+	right: 10px;
+}
+
+.container-card1{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  width: 330px;
+  height: 530px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+  border-radius: 3px;
+  text-align: center;
+  overflow: hidden;
+}
+.container-card2{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 330px;
+  height: 530px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+  border-radius: 3px;
+  text-align: center;
+  overflow: hidden;
+}
+.container-card3{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 500px;
+  width: 330px;
+  height: 530px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+  border-radius: 3px;
+  text-align: center;
+  overflow: hidden;
+}
+.container-card4{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 330px;
+  height: 530px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+  border-radius: 3px;
+  text-align: center;
+  overflow: hidden;
+}
+.container-card5{
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  width: 330px;
+  height: 530px;
   background: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
   border-radius: 3px;
@@ -20,6 +91,22 @@ html, body{
   overflow: hidden;
 }
 .container-card:hover .details{
+  bottom: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+.container-card2:hover .details{
+  bottom: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+.container-card3:hover .details{
+  bottom: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+.container-card4:hover .details{
+  bottom: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+.container-card5:hover .details{
   bottom: 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
 }
@@ -116,14 +203,14 @@ a:hover{
     background-color: #9bcb3b;
     width:50px;
     position: absolute;
-    left:210px;
+    left:180px;
     margin-top: 40px;
 }
 .wrapper {
 	width: 100px;
 	height: 50px;
     position:absolute;
-    left: 130px;
+    left: 100px;
     margin-top: 40px;
 	background: #fff;
 }
