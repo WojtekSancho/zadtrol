@@ -46,6 +46,7 @@ nav {
   min-width: 35%;
   justify-content: flex-end;
   padding: 0;
+  margin-right: 30px;
 }
 
 .navbar__kosz {
