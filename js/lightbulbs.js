@@ -17,8 +17,8 @@ minus.addEventListener('click', () => {
 	}
 })
 
-var container = document.getElementById('container')
-var slider = document.getElementById('bulb-slider')
+var container = document.getElementById('slider-container')
+var slider = document.getElementById('slider')
 var slides = document.getElementsByClassName('slide').length
 var buttons = document.getElementsByClassName('btn')
 
@@ -27,6 +27,7 @@ var currentMargin = 0
 var slidesPerPage = 0
 var slidesCount = slides - slidesPerPage
 var containerWidth = container.offsetWidth
+setParams(containerWidth);
 var prevKeyActive = false
 var nextKeyActive = true
 
