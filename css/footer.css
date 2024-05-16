@@ -124,7 +124,7 @@ body {
   height: 100%;
 }
 .footer .footer-bottom {
-  content: url(../svg/bottom.svg);
+  content: url(../svg/.bottom.svg);
   height: 100%;
 }
 .footer__list {
