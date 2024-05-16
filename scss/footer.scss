@@ -21,12 +21,12 @@ body {
     }
 
     .footer-top {
-        content: url(../static/plus.svg);
+        content: url(../svg/top.svg);
         height: 100%;
     }
 
     .footer-bottom {
-        content: url(../static/minus.svg);
+        content: url(../svg/.bottom.svg);
         height: 100%;
     }
 
@@ -36,7 +36,6 @@ body {
         list-style: none;
         flex-direction: column;
         padding: 16px;
-        font-family: "Metropolis-light", sans-serif;
     }
 
     &__listItem {
@@ -152,9 +151,4 @@ body {
     .copyright {
         padding-bottom: 79px;
     }
-}
-a:link, a:visited {
-    text-transform: none;
-    color:white;
-    font-weight: normal;
 }
