@@ -259,7 +259,9 @@
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
+		
 	  }
+	
 	  @media (min-width:1580px) {
 		#container {
 		  display:grid
@@ -287,3 +289,4 @@
 		  display:flex;
 		}
 	  }
+

@@ -19,10 +19,8 @@
 	
 	body{
 		margin: 0;		
-		font: normal normal 14px/14px Metropolis;
-		text-transform: uppercase;
+		font: normal normal 14px/14px Metropolis;	
 		letter-spacing: -0.28px;
-		background-color: white;
 	}
 	
 	.navbar img {
@@ -43,10 +41,10 @@
 		top: 0px;
 		left: 0;
 		right: 0px;
-		z-index: 1;
+		z-index: 2;
 		border-bottom: 2px solid #F2F3F4;
 	}
-	
+	  
 	.navbar{		
 		display: flex;
 		flex-wrap: nowrap;
@@ -125,7 +123,7 @@
 		justify-content: space-around;
 		position: fixed;
 		width: 100%;
-		z-index: 1;
+		z-index: 9;
 		top: 96px;
 	}
 	
@@ -171,7 +169,7 @@
 		position: absolute;
 		right: 0em;
 		width: 100%;
-		z-index: 1;
+		z-index: 9;
 		height: 80%;
 		top: 98px;
 		left: 1000px;
@@ -206,7 +204,7 @@
 		width: 100%;
 		padding-top: 5px;
 		padding-bottom: 5px;
-		z-index: 1;
+		z-index: 9;
 		align-items: center;
 	}
 	.navbarbot img{
@@ -222,11 +220,11 @@
 		}
 		.burger__menu {
 			display: block;
-			z-index: 1;
+			z-index: 9;
 		}
 		.burger__menu--aside{
 			display: block;
-			z-index: 1;
+			z-index: 9;
 		}
 		.burger__menu--aside li{
 			font-family: Metropolis-light;
@@ -234,7 +232,7 @@
 			font-size: 1.7rem;
 			border-bottom: 1px solid #F74137;
 			line-height:1.7rem;
-			z-index: 1;
+			z-index: 9;
 		}
 		.burger__menu--aside li:hover{
 			background-color: rgba(0,0,0,0.1)
