@@ -106,7 +106,7 @@
   font-weight: 900;
   src: url("/fonts/metropolis-blackitalic-webfont.woff2") format("woff2");
 }
-body {
+.body {
   font-family: "Metropolis", sans-serif;
 }
 
@@ -124,7 +124,7 @@ body {
   height: 100%;
 }
 .footer .footer-bottom {
-  content: url(../svg/.bottom.svg);
+  content: url(../svg/bottom.svg);
   height: 100%;
 }
 .footer__list {
@@ -185,7 +185,7 @@ body {
 .copyright {
   background-color: #FFF;
   color: #111;
-  padding: 22px 30px;
+  padding: 22px 30px 10px;
 }
 .copyright__list {
   display: flex;
@@ -219,10 +219,5 @@ body {
   .copyright__list {
     flex-direction: row;
     justify-content: space-between;
-  }
-}
-@media (max-width: 767px) {
-  .copyright {
-    padding-bottom: 79px;
   }
 }/*# sourceMappingURL=footer.css.map */
