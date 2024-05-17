@@ -98,3 +98,53 @@ function slideLeft() {
 		buttons[0].classList.remove('inactive')
 	}
 }
+
+const wrapper = document.querySelector ('.products-mobile-first')
+let pressed = false
+let startX = 0
+wrapper.addEventListener('mousedown', function(e){
+    pressed = true
+    startX = e.clientX
+    this.style.cursor = "grabbing"
+})
+
+wrapper.addEventListener('mouseleave', function(e){
+    pressed = false
+})
+
+window.addEventListener('mouseup', function(e){
+    pressed = false
+    wrapper.style.cursor = "grab"
+})
+
+wrapper.addEventListener('mousemove', function(e){
+    if(!pressed) {
+        return
+    }
+    this.scrollLeft += startX - e.clientX
+})
+
+const wrappy = document.querySelector ('.products-mobile-first2')
+let press = false
+let startY = 0
+wrappy.addEventListener('mousedown', function(e){
+    press = true
+    startY = e.clientX
+    this.style.cursor = "grabbing"
+})
+
+wrappy.addEventListener('mouseleave', function(e){
+    press = false
+})
+
+window.addEventListener('mouseup', function(e){
+    press = false
+    wrapper.style.cursor = "grab"
+})
+
+wrappy.addEventListener('mousemove', function(e){
+    if(!press) {
+        return
+    }
+    this.scrollLeft += startY - e.clientX
+})
