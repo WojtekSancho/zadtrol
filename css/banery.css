@@ -5,21 +5,18 @@
     src: url("/fonts/metropolis-thin-webfont.woff2") format("woff2");
 }
 
-body {
-    margin: 0;
-}
-
 .slider2 {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    height:auto;
+    height: auto;
     overflow: hidden;
 }
 
-.slide {
+.slide2 {
     position: relative;
-    flex: 0 0 calc(33.33% - 20px);
+    flex: 0 0 calc(33.33% - 50px);
     margin: 10px;
     overflow: hidden;
     width: 100%;
@@ -28,20 +25,20 @@ body {
     font-weight: light;
 }
 
-.slide img {
+.slide2 img {
     width: 100%; 
-    height: auto;
+    height: 300px;
     display: block;
     transition: transform 0.3s ease; 
     filter: brightness(0.8);
 }
 
-.slide:hover img {
+.slide2:hover img {
     transform: scale(1.1);
 }
 
 .text {
-    font-family: 'metropolis' ,sans-serif;
+    font-family: 'metropolis', sans-serif;
     color: white;
     font-weight: light;
     position: absolute;
@@ -52,7 +49,7 @@ body {
 }
 
 .textbox {
-    font-family: 'metropolis' ,sans-serif;
+    font-family: 'metropolis', sans-serif;
     position: absolute;
     bottom: 25%; 
     left: 10%;
@@ -71,55 +68,18 @@ body {
 }
 
 @media screen and (max-width: 1080px) {
-    .slide {
-        flex: 0 0 calc(50% - 5px); 
-    }
-
-    
-
-    .text {
-        top: 20%;
-		font-size:170%;
-    }
-
-    .textbox {
-        bottom: 20%; 
-		font-size:170%;
-    }
-
-@media screen and (max-width: 830px) {
-    .slide {
-        flex: 0 0 calc(50% - 10px); 
-    }
-
-   
-
-    .text {
-        top: 20%;
-		font-size: 25px; 
-    }
-
-    .textbox {
-        bottom: 17%;
-font-size: 15px; 		
-    }
-
-
-@media screen and (max-width: 490px) {
-    .slide {
-        flex: 0 0 calc(100% - 5px); 
+    .slide2 {
+        flex: 0 0 calc(100% - 10px); 
         margin: 5px;
     }
 
-   
-
     .text {
         top: 15%;
-		font-size: 30px;
-		
+        font-size: 30px;
     }
 
     .textbox {
-	font-size: 20px;
         bottom: 20%; 
+        font-size: 20px;
     }
+}

@@ -1,12 +1,11 @@
-@use '../scss/fonts';
-@use '../scss/variables';
+@mixin footer {
 
 // * {
 //     padding: 0;
 //     margin: 0;
 // }
 
-body {
+.body {
     font-family: 'Metropolis', sans-serif;
 }
 
@@ -26,7 +25,7 @@ body {
     }
 
     .footer-bottom {
-        content: url(../svg/.bottom.svg);
+        content: url(../svg/bottom.svg);
         height: 100%;
     }
 
@@ -99,7 +98,7 @@ body {
 .copyright {
     background-color: #FFF;
     color: #111;
-    padding: 22px 30px;
+    padding: 22px 30px 10px;
 
     &__list {
         display: flex;
@@ -149,6 +148,8 @@ body {
 
 @media (max-width: 767px) {
     .copyright {
-        padding-bottom: 79px;
+
     }
+}
+    
 }

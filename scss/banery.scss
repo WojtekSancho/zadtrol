@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 100;
+    src: url("/fonts/metropolis-thin-webfont.woff2") format("woff2");
+}
+
+.slider2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+}
+
+.slide2 {
+    position: relative;
+    flex: 0 0 calc(33.33% - 50px);
+    margin: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    font-weight: light;
+}
+
+.slide2 img {
+    width: 100%; 
+    height: 300px;
+    display: block;
+    transition: transform 0.3s ease; 
+    filter: brightness(0.8);
+}
+
+.slide2:hover img {
+    transform: scale(1.1);
+}
+
+.text {
+    font-family: 'metropolis', sans-serif;
+    color: white;
+    font-weight: light;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transition: transform 0.9s ease; 
+    font-size: 170%; 
+}
+
+.textbox {
+    font-family: 'metropolis', sans-serif;
+    position: absolute;
+    bottom: 25%; 
+    left: 10%;
+    padding: 12px 20px;
+    border: 1px solid;
+    border-color: white;
+    transition: transform 0.9s ease; 
+    font-size: 70%; 
+    font-weight: bold;
+    color: white;
+}
+
+.textbox:hover {
+    border-color: #F74137;
+    background: #F74137;
+}
+
+@media screen and (max-width: 1080px) {
+    .slide2 {
+        flex: 0 0 calc(100% - 10px); 
+        margin: 5px;
+    }
+
+    .text {
+        top: 15%;
+        font-size: 30px;
+    }
+
+    .textbox {
+        bottom: 20%; 
+        font-size: 20px;
+    }
+}

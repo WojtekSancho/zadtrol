@@ -170,7 +170,7 @@ c {
 .burger__menu--aside li {
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 1rem;
   font-size: 1.7rem;
 }
