@@ -324,4 +324,7 @@ c {
     display: flex;
     justify-content: space-around;
   }
+}
+main {
+  margin: 0.5em;
 }/*# sourceMappingURL=style.css.map */
