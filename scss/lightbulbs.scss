@@ -31,7 +31,7 @@
 	max-width: 1500px;
 	position: relative;
 	overflow: hidden;
-	padding: 20px;
+	padding: 20px 0px; 
   }
   
   #slider-container .btn {
@@ -56,6 +56,7 @@
   #slider-container .btn:last-of-type {
 	transform: rotate(135deg);
 	right: 10px;
+	left: 98%;
   }
   
   #slider-container #bulb-slider {
@@ -262,12 +263,12 @@
 		
 	  }
 	
-	  @media (min-width:1580px) {
+	  @media (min-width:1003px) {
 		#container {
 		  display:grid
 		}
 	  }
-	  @media (min-width:779px) and (max-width:1579px) {
+	  @media (min-width:779px) and (max-width:1002px) {
 		#container {
 		  display:none;
 		}
