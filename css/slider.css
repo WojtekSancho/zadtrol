@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "metropolis";
     font-style: normal;
@@ -18,7 +19,7 @@ body {
 .Slider {
     max-width: 100%;
     position: relative;
-    margin: 10px;
+    margin: 2%;
     overflow: hidden;
 }
 
@@ -29,6 +30,7 @@ body {
 }
 
 .SliderItem img {
+    margin-top:11%;
     width: 100%;
     vertical-align: middle;
     display: block;
@@ -38,7 +40,7 @@ body {
     position: relative;
 }
 
-.SliderItemText {
+.SliderItemText123 {
     position: absolute;
     top: 30%;
     left: 7%;
@@ -46,7 +48,7 @@ body {
     font-size: 28px;
     font-weight: light;
     text-align: left;
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .SliderItemText2 {
@@ -70,7 +72,7 @@ body {
 .Slider__buttonBack, .Slider__buttonNext {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 63%;
     width: auto;
     padding: 8px 16px;
     margin-top: -25px;
@@ -91,7 +93,7 @@ body {
 }
 
 @media screen and (max-width: 1350px) {
-    .SliderItemText {
+    .SliderItemText123 {
         top:20%;
     }
     .SliderItem img {
@@ -103,7 +105,7 @@ body {
 }
 
   @media screen and (max-width: 750px) {
-    .SliderItemText {
+    .SliderItemText123 {
         top:20%;
         left:20%;
     }
