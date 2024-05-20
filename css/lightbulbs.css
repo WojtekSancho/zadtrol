@@ -131,8 +131,8 @@
 }
 .bulb__SlideItem .lightbulbs__Wrapper {
   width: 100px;
-  height: 70px;
-  padding-bottom: 40px;
+  height: 80px;
+  padding-bottom: 30px;
   padding-left: 40px;
   display: flex;
   align-items: center;
@@ -171,9 +171,9 @@
 .bulb__SlideItem .lightbulbs__Basket {
   background: #9bcb3b 0% 0% no-repeat padding-box;
   width: 50px;
-  height: 42px;
+  height: 47px;
   margin-left: 100px;
-  margin-top: -70px;
+  margin-top: -80px;
   display: flex;
   align-items: center;
   justify-content: center;
