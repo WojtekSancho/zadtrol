@@ -3,15 +3,15 @@
 	padding: 0;
 }
 
-.lightbulbsSection {
+.lightbulbs__Section {
 	background-color: #f2f3f4;
 }
-.lightbulbsRecommendation-text h2 {
+.lightbulbs__Recommendation-text h2 {
 	text-align: center;
 	margin-top: 2%;
 	font-size: 40px;
 }
-.lightbulbsSection .lightbulbsRecommendation-text {
+.lightbulbs__Section .lightbulbs__Recommendation-text {
 	position: relative;
 	font-size: 30px;
 	padding: 20px;
@@ -20,7 +20,7 @@
 	align-items: center;
 	border-bottom: 1px solid gray;
 }
-.lightbulbsSection .lightbulbsRecommendation-text::after {
+.lightbulbs__Section .lightbulbs__Recommendation-text::after {
 	height: 3px;
 	width: 60px;
 	background-color: #f74137;
@@ -47,13 +47,13 @@
 	color: gray;
 }
 
-#lightbulbsContainer {
+#lightbulbs__Container {
 	height: 70vh;
 	display: grid;
 	place-items: center;
 }
 
-#lightbulbsContainer::after {
+#lightbulbs__Container::after {
 	border: red;
 	position: absolute;
 	width: 60px;
@@ -61,7 +61,7 @@
 	top: 0;
 }
 
-#lightbulbsSliderContainer {
+#lightbulbs_SliderContainer {
 	height: 500px;
 	width: 100vw;
 	max-width: 1500px;
@@ -70,7 +70,7 @@
 	padding: 20px 0px;
 }
 
-#lightbulbsSliderContainer .lightbulbsBtn {
+#lightbulbs_SliderContainer .lightbulbs__Btn {
 	position: absolute;
 	top: calc(50% - 10px);
 	height: 15px;
@@ -80,29 +80,29 @@
 	cursor: pointer;
 }
 
-#lightbulbsSliderContainer .lightbulbsBtn.inactive {
+#lightbulbs_SliderContainer .lightbulbs__Btn.inactive {
 	border-color: #282828;
 }
 
-#lightbulbsSliderContainer .lightbulbsBtn:first-of-type {
+#lightbulbs_SliderContainer .lightbulbs__Btn:first-of-type {
 	transform: rotate(-45deg);
 	left: 10px;
 }
 
-#lightbulbsSliderContainer .lightbulbsBtn:last-of-type {
+#lightbulbs_SliderContainer .lightbulbs__Btn:last-of-type {
 	transform: rotate(135deg);
 	right: 10px;
 	left: 98%;
 }
 
-#lightbulbsSliderContainer #bulbSlider {
+#lightbulbs_SliderContainer #bulb__Slider {
 	display: flex;
 	width: 600%;
 	height: 100%;
 	transition: all 0.5s;
 }
 
-#lightbulbsSliderContainer #bulbSlider .bulbSlide {
+#lightbulbs_SliderContainer #bulb__Slider .bulb__Slide {
 	height: 90%;
 	margin: auto 10px;
 	background-color: white;
@@ -113,18 +113,18 @@
 	transition: 0.6s;
 }
 
-#lightbulbsSliderContainer #bulbSlider img {
+#lightbulbs_SliderContainer #bulb__Slider img {
 	display: block;
 	width: 40%;
 	margin: 20px auto 0;
 }
 
 @media only screen and (min-width: 1100px) {
-	#lightbulbsSliderContainer #bulbSlider .bulbSlide {
+	#lightbulbs_SliderContainer #bulb__Slider .bulb__Slide {
 		width: calc(3.3333333% - 20px);
 	}
 }
-.bulbSlide .lightbulbsWrapper {
+.bulb__Slide .lightbulbs__Wrapper {
 	width: 100px;
 	height: 80px;
 	padding-bottom: 40px;
@@ -134,7 +134,7 @@
 	justify-content: center;
 }
 
-.bulbSlide .lightbulbsWrapper span {
+.bulb__Slide .lightbulbs__Wrapper span {
 	width: 100%;
 	height: 100%;
 	text-align: center;
@@ -143,27 +143,27 @@
 	cursor: pointer;
 }
 
-.bulbSlide .lightbulbsWrapper span.minus {
+.bulb__Slide .lightbulbs__Wrapper span.minus {
 	font: normal normal normal 14px/20px Metropolis;
 	border-right: 2px solid rgba(0, 0, 0, 0.2);
 	background-color: #f8f8f8;
 	line-height: 3.5;
 }
 
-.bulbSlide .lightbulbsWrapper span.plus {
+.bulb__Slide .lightbulbs__Wrapper span.plus {
 	font: normal normal normal 14px/20px Metropolis;
 	border-left: 2px solid rgba(0, 0, 0, 0.2);
 	background-color: #f8f8f8;
 	line-height: 3.5;
 }
 
-.bulbSlide .lightbulbsWrapper span.num {
+.bulb__Slide .lightbulbs__Wrapper span.num {
 	font: normal normal normal 14px/20px Metropolis;
 	background-color: #f8f8f8;
 	line-height: 3.5;
 }
 
-.bulbSlide .basket-next-price {
+.bulb__Slide .lightbulbs__Basket {
 	background: #9bcb3b 0% 0% no-repeat padding-box;
 	width: 50px;
 	height: 42px;
@@ -175,7 +175,7 @@
 	cursor: pointer;
 }
 
-.bulbSlide .basket-next-price img {
+.bulb__Slide .lightbulbs__Basket img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -183,25 +183,25 @@
 	filter: opacity(0.5) drop-shadow(0 0 0 blue);
 }
 
-#lightbulbsSliderContainer .left {
+#lightbulbs_SliderContainer .left {
 	position: absolute;
 	left: 1475px;
 }
 
-#lightbulbsSliderContainer .right {
+#lightbulbs_SliderContainer .right {
 	position: absolute;
 	right: 400px;
 }
 
-#bulbSlider .slideHover {
+#bulb__Slider .slide__Hover {
 	display: none;
 }
 
-#bulbSlider .bulbSlide:hover .slideHover {
+#bulb__Slider .bulb__Slide:hover .slide__Hover {
 	display: block;
 }
 
-.ResponsiveLaptopLightbuls {
+.Responsive__LaptopLightbuls {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -210,7 +210,7 @@
 	display: none;
 }
 
-.ResponsiveLaptopLightbuls .LaptopLightbulbsProducts {
+.Responsive__LaptopLightbuls .Laptop__LightbulbsProducts {
 	display: flex;
 	grid-gap: 1rem;
 	max-width: 1168px;
@@ -221,7 +221,7 @@
 	scroll-behavior: smooth;
 }
 
-.LaptopLightbulbsProducts  .LaptopLightbulbsSlider {
+.Laptop__LightbulbsProducts  .Laptop__LightbulbsSlider {
 	min-width: calc(32.7% - 0.5rem);
 	aspect-ratio: 1/1;
 	height: 500px;
@@ -240,13 +240,13 @@
 	user-select: none;
 }
 
-.LaptopLightbulbsProducts  .LaptopLightbulbsSlider h5 {
+.Laptop__LightbulbsProducts  .Laptop__LightbulbsSlider h5 {
 	text-decoration: line-through;
 	font-size: 15px;
 	color: rgb(162, 162, 162);
 }
 
-.LaptopLightbulbsProducts  .LaptopLightbulbsSlider .basket-next-price {
+.Laptop__LightbulbsProducts  .Laptop__LightbulbsSlider .lightbulbs__Basket {
 	background: #9bcb3b 0% 0% no-repeat padding-box;
 	border-radius: 20px;
 	padding: 7px;
@@ -256,7 +256,7 @@
 	cursor: pointer;
 }
 
-.ResponsiveMobileLightbulbs  {
+.Responsive__MobileLightbulbs  {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -265,7 +265,7 @@
 	display: none;
 }
 
-.ResponsiveMobileLightbulbs  .MobileLightbulbsProducts {
+.Responsive__MobileLightbulbs  .Mobile__LightbulbsProducts {
 	display: flex;
 	grid-gap: 1rem;
 	max-width: 568px;
@@ -276,7 +276,7 @@
 	scroll-behavior: smooth;
 }
 
-.MobileLightbulbsProducts .MobileLightbulbsSlider {
+.Mobile__LightbulbsProducts .Mobile__LightbulbsSlider {
 	min-width: calc(49% - 0.5rem);
 	aspect-ratio: 1/1;
 	height: 500px;
@@ -296,13 +296,13 @@
 	user-select: none;
 }
 
-.MobileLightbulbsProducts .MobileLightbulbsSlider h5 {
+.Mobile__LightbulbsProducts .Mobile__LightbulbsSlider h5 {
 	text-decoration: line-through;
 	font-size: 15px;
 	color: rgb(70, 69, 69);
 }
 
-.MobileLightbulbsProducts .MobileLightbulbsSlider .basket-next-price2 {
+.Mobile__LightbulbsProducts .Mobile__LightbulbsSlider .lightbuls_MobileBasket {
 	background: #9bcb3b 0% 0% no-repeat padding-box;
 	border-radius: 20px;
 	padding: 7px;
@@ -313,32 +313,32 @@
 }
 
 @media (min-width: 1170px) {
-	#lightbulbsContainer {
+	#lightbulbs__Container {
 		display: grid;
 	}
 }
 @media (min-width: 779px) and (max-width: 1169px) {
-	#lightbulbsContainer {
+	#lightbulbs__Container {
 		display: none;
 	}
-	.ResponsiveLaptopLightbuls {
+	.Responsive__LaptopLightbuls {
 		display: flex;
 	}
-	.ResponsiveMobileLightbulbs  {
+	.Responsive__MobileLightbulbs  {
 		display: none;
 	}
 }
 @media (min-width: 340px) and (max-width: 778px) {
-	#lightbulbsContainer {
+	#lightbulbs__Container {
 		display: none;
 	}
-	.ResponsiveLaptopLightbuls {
+	.Responsive__LaptopLightbuls {
 		display: none;
 	}
-	.ResponsiveMobileLightbulbs  {
+	.Responsive__MobileLightbulbs {
 		display: flex;
 	}
-	.MobileLightbulbsSlider span,
+	.Mobile__LightbulbsSlider span,
 	h4 {
 		font-size: 15px;
 	}
