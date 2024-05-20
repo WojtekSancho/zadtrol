@@ -107,7 +107,7 @@
   transition: all 0.5s;
 }
 
-#lightbulbs_SliderContainer #bulb__Slider .bulb__Slide {
+#lightbulbs_SliderContainer #bulb__Slider .bulb__SlideItem {
   height: 90%;
   margin: auto 10px;
   background-color: white;
@@ -125,11 +125,11 @@
 }
 
 @media only screen and (min-width: 1100px) {
-  #lightbulbs_SliderContainer #bulb__Slider .bulb__Slide {
+  #lightbulbs_SliderContainer #bulb__Slider .bulb__SlideItem {
     width: calc(3.3333333% - 20px);
   }
 }
-.bulb__Slide .lightbulbs__Wrapper {
+.bulb__SlideItem .lightbulbs__Wrapper {
   width: 100px;
   height: 50px;
   padding-bottom: 40px;
@@ -139,7 +139,7 @@
   justify-content: center;
 }
 
-.bulb__Slide .lightbulbs__Wrapper span {
+.bulb__SlideItem .lightbulbs__Wrapper span {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -148,27 +148,27 @@
   cursor: pointer;
 }
 
-.bulb__Slide .lightbulbs__Wrapper span.minus {
+.bulb__SlideItem .lightbulbs__Wrapper span.minus {
   font: normal normal normal 14px/20px Metropolis;
   border-right: 2px solid rgba(0, 0, 0, 0.2);
   background-color: #f8f8f8;
   line-height: 3.5;
 }
 
-.bulb__Slide .lightbulbs__Wrapper span.plus {
+.bulb__SlideItem .lightbulbs__Wrapper span.plus {
   font: normal normal normal 14px/20px Metropolis;
   border-left: 2px solid rgba(0, 0, 0, 0.2);
   background-color: #f8f8f8;
   line-height: 3.5;
 }
 
-.bulb__Slide .lightbulbs__Wrapper span.num {
+.bulb__SlideItem .lightbulbs__Wrapper span.num {
   font: normal normal normal 14px/20px Metropolis;
   background-color: #f8f8f8;
   line-height: 3.5;
 }
 
-.bulb__Slide .lightbulbs__Basket {
+.bulb__SlideItem .lightbulbs__Basket {
   background: #9bcb3b 0% 0% no-repeat padding-box;
   width: 50px;
   height: 47px;
@@ -180,7 +180,7 @@
   cursor: pointer;
 }
 
-.bulb__Slide .lightbulbs__Basket img {
+.bulb__SlideItem .lightbulbs__Basket img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +202,7 @@
   display: none;
 }
 
-#bulb__Slider .bulb__Slide:hover .slide__Hover {
+#bulb__Slider .bulb__SlideItem:hover .slide__Hover {
   display: block;
 }
 

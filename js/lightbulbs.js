@@ -19,7 +19,7 @@ minus.addEventListener('click', () => {
 
 var container = document.getElementById('lightbulbs__Container')
 var slider = document.getElementById('bulb__Slider')
-var slides = document.getElementsByClassName('bulb__Slide').length
+var slides = document.getElementsByClassName('bulb__SlideItem').length
 var buttons = document.getElementsByClassName('lightbulbs__Btn')
 
 var currentPosition = 0
