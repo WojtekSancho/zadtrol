@@ -17,10 +17,10 @@ minus.addEventListener('click', () => {
 	}
 })
 
-var container = document.getElementById('container')
-var slider = document.getElementById('bulb-slider')
-var slides = document.getElementsByClassName('slide').length
-var buttons = document.getElementsByClassName('btn')
+var container = document.getElementById('lightbulbsContainer')
+var slider = document.getElementById('bulbSlider')
+var slides = document.getElementsByClassName('bulbSlide').length
+var buttons = document.getElementsByClassName('lightbulbsBtn')
 
 var currentPosition = 0
 var currentMargin = 0
@@ -99,7 +99,7 @@ function slideLeft() {
 	}
 }
 
-const wrapper = document.querySelector ('.products-mobile-first')
+const wrapper = document.querySelector ('.LaptopLightbulbsProducts')
 let pressed = false
 let startX = 0
 wrapper.addEventListener('mousedown', function(e){
@@ -124,7 +124,7 @@ wrapper.addEventListener('mousemove', function(e){
     this.scrollLeft += startX - e.clientX
 })
 
-const wrappy = document.querySelector ('.products-mobile-first2')
+const wrappy = document.querySelector ('.MobileLightbulbsProducts')
 let press = false
 let startY = 0
 wrappy.addEventListener('mousedown', function(e){
