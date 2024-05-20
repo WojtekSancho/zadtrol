@@ -1,5 +1,6 @@
-@mixin footer {
 
+@use 'variables.scss';
+@use 'fonts.scss';
 // * {
 //     padding: 0;
 //     margin: 0;
@@ -144,12 +145,5 @@
             justify-content: space-between;
         }
     }
-}
+}  
 
-@media (max-width: 767px) {
-    .copyright {
-
-    }
-}
-    
-}
