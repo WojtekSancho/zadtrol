@@ -17,9 +17,9 @@ minus.addEventListener('click', () => {
 	}
 })
 
-let container = document.querySelector('#lightbulbs__Container')
-let slider = document.querySelector('#bulb__Slider')
-let slides = document.querySelectorAll('.bulb__SlideItem').length
+let container = document.querySelector('#productSlider__Container')
+let slider = document.querySelector('#productSlider__LightbulbsSlider')
+let slides = document.querySelectorAll('.productSlider__LightbulbsSlideItem').length
 let buttons = document.querySelector('.lightbulbs__Btn')
 
 let currentPosition = 0
@@ -98,6 +98,7 @@ function slideLeft() {
 		buttons[1].classList.remove('inactive')
 	}
 }
+
 
 const wrapper = document.querySelector ('.Laptop__LightbulbsProducts')
 let pressed = false
