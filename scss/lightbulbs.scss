@@ -1,76 +1,126 @@
 * {
 	margin: 0;
 	padding: 0;
-}
-body {
+  }
+  .arrow__box--left {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: #C1C2C6;
+	top: calc(50% - 10px);
+	left: 10px;
+  }
+  .arrow__box--right {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: #C1C2C6;
+	top: calc(50% - 10px);
+	right: 10px;
+  }
+  
+  
+  .lightbulbs__Section {
 	background-color: #f2f3f4;
-}
-.slide h5 {
+  }
+  
+  .lightbulbs__Recommendation-text h2 {
+	text-align: center;
+	margin-top: 2%;
+	font-size: 40px;
+  }
+  
+  .lightbulbs__Section .lightbulbs__Recommendation-text {
+	position: relative;
+	font-size: 30px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid gray;
+  }
+  
+  .lightbulbs__Section .lightbulbs__Recommendation-text::after {
+	height: 3px;
+	width: 60px;
+	background-color: #f74137;
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+  }
+  
+  .lightbulbs-button {
+	font-weight: bold;
+	background-color: #f74137;
+	color: #ffffff;
+	font-size: 17px;
+	border: 0;
+	width: 318px;
+	height: 55px;
+	display: block;
+	margin: auto;
+	cursor: pointer;
+	margin-bottom: 3%;
+  }
+  
+  .bulb__SlideItem h5 {
 	text-decoration: line-through;
 	color: gray;
-}
-#container {
-	height: 100vh;
+  }
+  
+  #lightbulbs__Container {
+	height: 70vh;
 	display: grid;
 	place-items: center;
-}
-h2 {
-	text-align: center;
-	margin-top: 200px;
-	font-size: 40px;
-	font: normal normal bold Metropolis;
-	height: 71px;
-	border-bottom: 1px solid black;
-}
-#container::after {
+  }
+  
+  #lightbulbs__Container::after {
 	border: red;
 	position: absolute;
 	width: 60px;
 	height: 50px;
 	top: 0;
-}
-
-#slider-container {
+  }
+  
+  #lightbulbs_SliderContainer {
 	height: 500px;
 	width: 100vw;
 	max-width: 1500px;
 	position: relative;
 	overflow: hidden;
-	padding: 20px;
-}
-
-#slider-container .btn {
+	padding: 20px 0px;
+  }
+  
+  #lightbulbs_SliderContainer .lightbulbs__Btn {
 	position: absolute;
-	top: calc(50% - 10px);
-	height: 15px;
-	width: 15px;
-	border-top: 8px solid #696969;
-	border-left: 8px solid #696969;
+	top: calc(52% - 10px);
+	height: 22px;
+	width: 22px;
+	border-top: 8px solid #ffffff;
+	border-left: 8px solid #ffffff;
 	cursor: pointer;
-}
-
-#slider-container .btn.inactive {
-	border-color: #282828;
-}
-
-#slider-container .btn:first-of-type {
+  }
+  
+  #lightbulbs_SliderContainer .lightbulbs__Btn:first-of-type {
 	transform: rotate(-45deg);
-	left: 10px;
-}
-
-#slider-container .btn:last-of-type {
+	left: 24px;
+  }
+  
+  #lightbulbs_SliderContainer .lightbulbs__Btn:last-of-type {
 	transform: rotate(135deg);
-	right: 10px;
-}
-
-#slider-container #bulb-slider {
+	left: 96.5%;
+	z-index: 2;
+  }
+  
+  #lightbulbs_SliderContainer #bulb__Slider {
 	display: flex;
 	width: 600%;
 	height: 100%;
 	transition: all 0.5s;
-}
-
-#slider-container #bulb-slider .slide {
+  }
+  
+  #lightbulbs_SliderContainer #bulb__Slider .bulb__SlideItem {
 	height: 90%;
 	margin: auto 10px;
 	background-color: white;
@@ -79,94 +129,235 @@ h2 {
 	place-items: center;
 	bottom: -130px;
 	transition: 0.6s;
-}
-#slider-container #bulb-slider img {
+  }
+  
+  #lightbulbs_SliderContainer #bulb__Slider img {
 	display: block;
 	width: 40%;
 	margin: 20px auto 0;
-}
-
-@media only screen and (min-width: 1100px) {
-	#slider-container #bulb-slider .slide {
-		width: calc(3.3333333% - 20px);
+  }
+  
+  @media only screen and (min-width: 1100px) {
+	#lightbulbs_SliderContainer #bulb__Slider .bulb__SlideItem {
+	  width: calc(3.3333333% - 20px);
 	}
-}
-@media only screen and (max-width: 900px) {
-	#slider-container #slide .slide {
-		width: calc(5% - 20px);
-	}
-}
-@media only screen and (max-width: 550px) {
-	#slider-container #bulb-slider .slide {
-		width: calc(10% - 20px);
-	}
-}
-.wrapper {
+  }
+  .bulb__SlideItem .lightbulbs__Wrapper {
 	width: 100px;
-	height: 50px;
-	padding-bottom: 40px;
+	height: 80px;
+	padding-bottom: 30px;
 	padding-left: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-.wrapper span {
+  }
+  
+  .bulb__SlideItem .lightbulbs__Wrapper span {
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	font-size: 55px;
+	font-size: 60px;
 	font-weight: 600;
 	cursor: pointer;
-}
-.wrapper span.minus {
+  }
+  
+  .bulb__SlideItem .lightbulbs__Wrapper span.minus {
 	font: normal normal normal 14px/20px Metropolis;
 	border-right: 2px solid rgba(0, 0, 0, 0.2);
 	background-color: #f8f8f8;
 	line-height: 3.5;
-}
-.wrapper span.plus {
+  }
+  
+  .bulb__SlideItem .lightbulbs__Wrapper span.plus {
 	font: normal normal normal 14px/20px Metropolis;
 	border-left: 2px solid rgba(0, 0, 0, 0.2);
 	background-color: #f8f8f8;
 	line-height: 3.5;
-}
-.wrapper span.num {
+  }
+  
+  .bulb__SlideItem .lightbulbs__Wrapper span.num {
 	font: normal normal normal 14px/20px Metropolis;
 	background-color: #f8f8f8;
 	line-height: 3.5;
-}
-.basket-next-price {
+  }
+  
+  .bulb__SlideItem .lightbulbs__Basket {
 	background: #9bcb3b 0% 0% no-repeat padding-box;
 	width: 50px;
-	height: 50px;
-	margin-left: 150px;
-	margin-top: -90px;
+	height: 47px;
+	margin-left: 100px;
+	margin-top: -80px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-}
-.basket-next-price img {
+  }
+  
+  .bulb__SlideItem .lightbulbs__Basket img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 20px;
 	filter: opacity(0.5) drop-shadow(0 0 0 blue);
-}
-.left {
+  }
+  
+  #lightbulbs_SliderContainer .left {
 	position: absolute;
 	left: 1475px;
-}
-
-.right {
+  }
+  
+  #lightbulbs_SliderContainer .right {
 	position: absolute;
 	right: 400px;
-}
-
-.slide__con{
+  }
+  
+  #bulb__Slider .slide__Hover {
 	display: none;
-}
-.slide:hover .slide__con{
+  }
+  
+  #bulb__Slider .bulb__SlideItem:hover .slide__Hover {
 	display: block;
-}
-
+  }
+  
+  .Responsive__LaptopLightbuls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60vh;
+	padding: 1rem;
+	display: none;
+  }
+  
+  .Responsive__LaptopLightbuls .Laptop__LightbulbsProducts {
+	display: flex;
+	grid-gap: 1rem;
+	max-width: 1168px;
+	width: 100%;
+	overflow-x: auto;
+	scroll-snap-type: x;
+	cursor: grab;
+	scroll-behavior: smooth;
+  }
+  
+  .Laptop__LightbulbsProducts .Laptop__LightbulbsSlider {
+	min-width: calc(32.7% - 0.5rem);
+	aspect-ratio: 1/1;
+	height: 500px;
+	width: 100%;
+	background-color: #ffffff;
+	border: 1px solid rgb(194, 194, 194);
+	border-radius: 10px;
+	display: grid;
+	place-items: center;
+	color: #202020;
+	text-align: center;
+	scroll-snap-align: start;
+	font-weight: 600;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+  }
+  
+  .Laptop__LightbulbsProducts .Laptop__LightbulbsSlider h5 {
+	text-decoration: line-through;
+	font-size: 15px;
+	color: rgb(162, 162, 162);
+  }
+  
+  .Laptop__LightbulbsProducts .Laptop__LightbulbsSlider .lightbulbs__Basket {
+	background: #9bcb3b 0% 0% no-repeat padding-box;
+	border-radius: 20px;
+	padding: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+  }
+  
+  .Responsive__MobileLightbulbs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60vh;
+	padding: 1rem;
+	display: none;
+  }
+  
+  .Responsive__MobileLightbulbs .Mobile__LightbulbsProducts {
+	display: flex;
+	grid-gap: 1rem;
+	max-width: 568px;
+	width: 100%;
+	overflow-x: auto;
+	scroll-snap-type: x;
+	cursor: grab;
+	scroll-behavior: smooth;
+  }
+  
+  .Mobile__LightbulbsProducts .Mobile__LightbulbsSlider {
+	min-width: calc(49% - 0.5rem);
+	aspect-ratio: 1/1;
+	height: 500px;
+	width: 100%;
+	background-color: #ffffff;
+	border: 1px solid rgb(194, 194, 194);
+	border-radius: 10px;
+	display: grid;
+	place-items: center;
+	color: #202020;
+	text-align: center;
+	scroll-snap-align: start;
+	font-weight: 600;
+	font-size: 20px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+  }
+  
+  .Mobile__LightbulbsProducts .Mobile__LightbulbsSlider h5 {
+	text-decoration: line-through;
+	font-size: 15px;
+	color: rgb(70, 69, 69);
+  }
+  
+  .Mobile__LightbulbsProducts .Mobile__LightbulbsSlider .lightbuls_MobileBasket {
+	background: #9bcb3b 0% 0% no-repeat padding-box;
+	border-radius: 20px;
+	padding: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+  }
+  
+  @media (min-width: 1170px) {
+	#lightbulbs__Container {
+	  display: grid;
+	}
+  }
+  @media (min-width: 779px) and (max-width: 1169px) {
+	#lightbulbs__Container {
+	  display: none;
+	}
+	.Responsive__LaptopLightbuls {
+	  display: flex;
+	}
+	.Responsive__MobileLightbulbs {
+	  display: none;
+	}
+  }
+  @media (min-width: 340px) and (max-width: 778px) {
+	#lightbulbs__Container {
+	  display: none;
+	}
+	.Responsive__LaptopLightbuls {
+	  display: none;
+	}
+	.Responsive__MobileLightbulbs {
+	  display: flex;
+	}
+	.Mobile__LightbulbsSlider span,
+	h4 {
+	  font-size: 15px;
+	}
+  }
