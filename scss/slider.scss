@@ -38,21 +38,21 @@ body {
   position: relative;
 }
 
-.slider__item-text1 {
+.slider__item-text-1 {
   position: absolute;
   top: 30%;
   left: 7%;
   color: white;
   font-size: 28px;
-  font-weight: light;
+  font-weight: bold;
   text-align: left;
   max-width: 100%;
   line-height: 0.9rem;
 }
 
-.slider__item-text2 {
+.slider__item-text-2 {
   font-size: 50%;
-  font-weight: light;
+  font-weight: bold;
 }
 
 .slider__textbox {
@@ -95,7 +95,7 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  .slider__item-text1 {
+  .slider__item-text-1 {
       top: 30%;
   }
 
@@ -108,7 +108,7 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-  .slider__item-text1 {
+  .slider__item-text-1 {
       top: 25%;
       left: 20%;
   }

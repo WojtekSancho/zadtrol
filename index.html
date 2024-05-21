@@ -59,36 +59,51 @@
 </header>
 <main>
     <section>
-        <div class="Slider">
-            <div class="Slider_Item">
-                <div class="Slider_ItemNumber">
-                    <img class="Slider_ItemImage" src="./images/Group 40.png" alt="SEDNA">
-                    <div class="Slider_ItemText1"><strong>Poznaj SEDNA</strong><br><br>Schneider Electric<br><br><br>
-                        <div class="Slider_ItemText2">Sedna to osprzęt elektroinstalacyjny<br>o wyrazistym kształcie
-                            oraz<br> unikalnej formie.
+        <!DOCTYPE html>
+        <html lang="pl">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/slider.css">
+            <title>Responsive Slider</title>
+        </head>
+        <body>
+            <div class="slider">
+                <div class="slider__item">
+                    <div class="slider__item-number">
+                        <img class="slider__item-image" src="./images/Group 40.png" alt="SEDNA">
+                        <div class="slider__item-text1">
+                            <strong>Poznaj SEDNA</strong><br><br>Schneider Electric<br><br><br>
+                            <div class="slider__item-text2">
+                                Sedna to osprzęt elektroinstalacyjny<br>o wyrazistym kształcie oraz<br>unikalnej formie.
+                            </div>
+                        </div>
+                        <div class="slider__textbox">
+                            ZOBACZ WIĘCEJ
                         </div>
                     </div>
-                    <div class="textbox2">
-                        ZOBACZ WIĘCEJ
-                    </div>
                 </div>
-            </div>
-            <div class="Slider_Item">
-                <div class="Slider_ItemNumber">
-                    <img class="Slider_ItemImage" src="./images/Mask Group 40.png" alt="Philips HUE">
-                    <div class="Slider_ItemText1"><strong>Philips HUE</strong><br><br>Oświetl swój dom<br><br><br>
-                        <div class="Slider_ItemText2">Wyobraź sobie, że jednym<br> dotknięciem wyłączasz<br> wszystkie
-                            światła.
+                <div class="slider__item">
+                    <div class="slider__item-number">
+                        <img class="slider__item-image" src="./images/Mask Group 40.png" alt="Philips HUE">
+                        <div class="slider__item-text1">
+                            <strong>Philips HUE</strong><br><br>Oświetl swój dom<br><br><br>
+                            <div class="slider__item-text2">
+                                Wyobraź sobie, że jednym<br>dotknięciem wyłączasz<br>wszystkie światła.
+                            </div>
+                        </div>
+                        <div class="slider__textbox">
+                            ZOBACZ WIĘCEJ
                         </div>
                     </div>
-                    <div class="textbox2">
-                        ZOBACZ WIĘCEJ
-                    </div>
                 </div>
+                <a class="slider__button-back" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="slider__button-next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <a class="Slider__buttonBack" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="Slider__buttonNext" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+            <script src="./js/slider.js"></script>
+        </body>
+        </html>
+        
         <script src="./js/slider.js"></script>
     <script src="./js/burgermenu.js"></script>
 </section>
@@ -124,6 +139,7 @@
             </div>
         </div>
     </div>
+    
 </section>
     
     <section class="lightbulbs__Section">
