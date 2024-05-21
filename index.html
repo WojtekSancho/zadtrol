@@ -55,75 +55,80 @@
             <a><img src="./images/Group 4924.svg" alt="🙍‍♂️"></a>
             <a><img src="./images/Group 4934.svg"></a>    
     </div>
+    <script src="./js/burgermenu.js"></script>
 </header>
 <main>
-    <section>
-        <div class="Slider">
-            <div class="SliderItem">
-                <div class="SliderItemNumber">
-                    <img class="SliderItemImage" src="./images/Group 40.png" alt="SEDNA">
-                    <div class="SliderItemText123"><strong>Poznaj SEDNA</strong><br><br>Schneider Electric<br><br><br>
-                        <div class="SliderItemText2">Sedna to osprzęt elektroinstalacyjny<br>o wyrazistym kształcie
-                            oraz<br> unikalnej formie.
-                        </div>
-                    </div>
-                    <div class="textbox2">
-                        ZOBACZ WIĘCEJ
-                    </div>
-                </div>
-            </div>
-            <div class="SliderItem">
-                <div class="SliderItemNumber">
-                    <img class="SliderItemImage" src="./images/Mask Group 40.png" alt="Philips HUE">
-                    <div class="SliderItemText123"><strong>Philips HUE</strong><br><br>Oświetl swój dom<br><br><br>
-                        <div class="SliderItemText2">Wyobraź sobie, że jednym<br> dotknięciem wyłączasz<br> wszystkie
-                            światła.
-                        </div>
-                    </div>
-                    <div class="textbox2">
-                        ZOBACZ WIĘCEJ
+    
+            <section class="slider">
+                <div class="slider__item">
+                    <div class="slider__item-number">
+                        <img class="slider__item-image" src="./images/Group 40.png" alt="SEDNA">
+                        <div class="slider__item-text_bold">Poznaj SEDNA</div>
+                        <div class="slider__item-text_light">Schneider Electric</div>
+                        <div class="slider__item-text-1">Sedna to osprzęt elektroinstalacyjny</div>
+                        <div class="slider__item-text-2">o wyrazistym kształcie oraz</div>
+                        <div class="slider__item-text-3">unikalnej formie.</div>
+                        
+                        <div class="slider__textbox">ZOBACZ WIĘCEJ</div>
                     </div>
                 </div>
-            </div>
-            <a class="Slider__buttonBack" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="Slider__buttonNext" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <script src="./js/slider.js"></script>
-    <script src="./js/burgermenu.js"></script>
-
-    <div class="slider2">
-        <div class="slide2">
-            <img src="./images/Image 203.png" alt="Image 1">
-            <div class="text">
-                <strong>Pomoc eksperta</strong><br>
-                Doradzamy
-            </div>
-            <div class="textbox">
+                <div class="slider__item">
+                    <div class="slider__item-number">
+                        <img class="slider__item-image" src="./images/Mask Group 40.png" alt="Philips HUE">
+                        
+                            <div class="slider__item-text_bold">Philips HUE</div>
+                            <div class="slider__item-text_light">Oświetl swój dom</div>
+                            <div class="slider__item-text-1">Wyobraź sobie, że jednym</div>
+                            <div class="slider__item-text-2">dotknięciem wyłączasz</div>
+                            <div class="slider__item-text-3">wszystkie światła.</div>
+                        <div class="slider__textbox">
+                            ZOBACZ WIĘCEJ
+                        </div>
+                    </div>
+                </div>
+                <a class="slider__button-back" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="slider__button-next" onclick="plusSlides(1)">&#10095;</a>
+            
+            
+        
+        
+       
+            </section>
+    <section class="banner">
+        <div class="banner__slide">
+            <img class="banner__image" src="./images/Image 203.png" alt="Image 1">
+            <div class="banner__text">
+                Pomoc eksperta</div>
+                <a class="banner__link">Doradzamy</a> 
+        
+            <div class="banner__textbox">
                 ZOBACZ WIĘCEJ
             </div>
         </div>
-        <div class="slide2">
-            <img src="./images/Image 204.png" alt="Image 2">
-            <div class="text">
-                <strong>Szukaj wygodnie</strong><br>
-                Elhurt Plus
-            </div>
-            <div class="textbox">
+        <div class="banner__slide">
+            <img class="banner__image" src="./images/Image 204.png" alt="Image 2">
+            <div class="banner__text">
+                Szukaj wygodnie</div>
+               <a class="banner__link">Elhurt Plus</a> 
+           
+            <div class="banner__textbox">
                 ZOBACZ WIĘCEJ
             </div>
         </div>
-        <div class="slide2">
-            <img src="./images/Image 205.png" alt="Image 3">
-            <div class="text">
-                <strong>Seria Unica</strong><br>
-                <a>Wyjątkowy wzór</a> 
-            </div>
-            <div class="textbox">
+        <div class="banner__slide">
+            <img class="banner__image" src="./images/Image 205.png" alt="Image 3">
+            <div class="banner__text">
+                Seria Unica</div>
+                <a class="banner__link">Wyjątkowy wzór</a> 
+            
+            <div class="banner__textbox">
                 ZOBACZ WIĘCEJ
             </div>
         </div>
     </div>
-    </section>
+    
+</section>
+    
     <section class="lightbulbs__Section">
         <div class="lightbulbs__Recommendation-text">
             <h2>Polecane produkty</h2>
@@ -696,5 +701,6 @@
     <script src="/js/lightbulbs.js"></script>
     <script src="response.js"></script>
     <script src="./js/burgermenu.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>

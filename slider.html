@@ -3,40 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/slider.css">
+    <link rel="stylesheet" href="css/slider.css">
     <title>Responsive Slider</title>
 </head>
 <body>
-    <div class="Slider">
-        <div class="Slider_Item">
-            <div class="Slider_ItemNumber">
-                <img class="Slider_ItemImage" src="./images/Group 40.png" alt="SEDNA">
-                <div class="Slider_ItemText1"><strong>Poznaj SEDNA</strong><br><br>Schneider Electric<br><br><br>
-                    <div class="Slider_ItemText2">Sedna to osprzęt elektroinstalacyjny<br>o wyrazistym kształcie
-                        oraz<br> unikalnej formie.
-                    </div>
-                </div>
-                <div class="textbox2">
+    <div class="slider">
+        <div class="slider__item">
+            <div class="slider__item-number">
+                <img class="slider__item-image" src="./images/Group 40.png" alt="SEDNA">
+                <div class="slider__item-text_bold">Poznaj SEDNA</div>
+                <div class="slider__item-text_light">Schneider Electric</div>
+                <div class="slider__item-text-1">Sedna to osprzęt elektroinstalacyjny</div>
+                <div class="slider__item-text-2">o wyrazistym kształcie oraz</div>
+                <div class="slider__item-text-3">unikalnej formie.</div>
+                
+                <div class="slider__textbox">ZOBACZ WIĘCEJ</div>
+            </div>
+        </div>
+        <div class="slider__item">
+            <div class="slider__item-number">
+                <img class="slider__item-image" src="./images/Mask Group 40.png" alt="Philips HUE">
+                
+                    <div class="slider__item-text_bold">Philips HUE</div>
+                    <div class="slider__item-text_light">Oświetl swój dom</div>
+                    <div class="slider__item-text-1">Wyobraź sobie, że jednym</div>
+                    <div class="slider__item-text-2">dotknięciem wyłączasz</div>
+                    <div class="slider__item-text-3">wszystkie światła.</div>
+                <div class="slider__textbox">
                     ZOBACZ WIĘCEJ
                 </div>
             </div>
         </div>
-        <div class="Slider_Item">
-            <div class="Slider_ItemNumber">
-                <img class="Slider_ItemImage" src="./images/Mask Group 40.png" alt="Philips HUE">
-                <div class="Slider_ItemText1"><strong>Philips HUE</strong><br><br>Oświetl swój dom<br><br><br>
-                    <div class="Slider_ItemText2">Wyobraź sobie, że jednym<br> dotknięciem wyłączasz<br> wszystkie
-                        światła.
-                    </div>
-                </div>
-                <div class="textbox2">
-                    ZOBACZ WIĘCEJ
-                </div>
-            </div>
-        </div>
-        <a class="Slider__buttonBack" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="Slider__buttonNext" onclick="plusSlides(1)">&#10095;</a>
+        <a class="slider__button-back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="slider__button-next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <script src="./js/slider.js"></script>
 </body>
 </html>
+

@@ -7,7 +7,7 @@ function plusSlides(n) {
 
 function showSlides(n) {
     let i;
-    const slides = document.getElementsByClassName("Slider_Item");
+    const slides = document.getElementsByClassName("slider__item");
     
     if (n >= slides.length) { 
         slideIndex = 0; 
@@ -22,5 +22,4 @@ function showSlides(n) {
     
     slides[slideIndex].style.display = "block"; 
 }
-
 
