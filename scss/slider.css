@@ -14,30 +14,30 @@ body {
   padding: 0;
 }
 
-.Slider {
+.slider {
   max-width: 100%;
   position: relative;
   margin: 2%;
   overflow: hidden;
 }
 
-.Slider_Item {
+.slider__item {
   display: none;
   position: relative;
   width: 100%;
 }
 
-.Slider_Item img {
+.slider__item img {
   margin-top: 9rem;
   width: 100%;
   display: block;
 }
 
-.Slider_ItemNumber {
+.slider__item-number {
   position: relative;
 }
 
-.Slider_ItemText1 {
+.slider__item-text1 {
   position: absolute;
   top: 30%;
   left: 7%;
@@ -49,12 +49,12 @@ body {
   line-height: 0.9rem;
 }
 
-.Slider_ItemText2 {
+.slider__item-text2 {
   font-size: 50%;
   font-weight: light;
 }
 
-.textbox2 {
+.slider__textbox {
   font-family: "metropolis", sans-serif;
   position: absolute;
   bottom: 25%;
@@ -67,7 +67,8 @@ body {
   background-color: #f74137;
 }
 
-.Slider__buttonBack, .Slider__buttonNext {
+.slider__button-back,
+.slider__button-next {
   cursor: pointer;
   position: absolute;
   top: 63%;
@@ -84,19 +85,19 @@ body {
   background: #c1c2c6;
 }
 
-.Slider__buttonBack {
+.slider__button-back {
   left: 0;
 }
 
-.Slider__buttonNext {
+.slider__button-next {
   right: 0;
 }
 
 @media screen and (max-width: 1200px) {
-  .Slider_ItemText1 {
+  .slider__item-text1 {
     top: 30%;
   }
-  .Slider_Item img {
+  .slider__item img {
     margin-top: 6rem;
     width: 100%;
     height: 400px;
@@ -104,16 +105,16 @@ body {
   }
 }
 @media screen and (max-width: 750px) {
-  .Slider_ItemText1 {
+  .slider__item-text1 {
     top: 25%;
     left: 20%;
   }
-  .Slider_Item img {
+  .slider__item img {
     width: 100%;
     height: 400px;
     display: block;
   }
-  .textbox2 {
+  .slider__textbox {
     left: 20%;
   }
 }/*# sourceMappingURL=slider.css.map */
