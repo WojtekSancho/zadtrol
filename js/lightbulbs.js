@@ -17,135 +17,100 @@ minus.addEventListener('click', () => {
 	}
 })
 
+
+
+
 let container = document.querySelector('#productSlider__Container')
 let slider = document.querySelector('#productSlider__LightbulbsSlider')
-let slides = document.querySelectorAll('.productSlider__LightbulbsSlideItem').length
-let buttons = document.querySelector('.lightbulbs__Btn')
+let slides = document.querySelectorAll('.productSlider__LightbulbsSlideItem')
+let prevButton = document.querySelector('.left')
+let nextButton = document.querySelector('.right')
 
 let currentPosition = 0
 let currentMargin = 0
 let slidesPerPage = 0
-let slidesCount = slides - slidesPerPage
+let slidesCount = slides.length - slidesPerPage
 let containerWidth = container.offsetWidth
-setParams(containerWidth);
+let slideWidth = slides[0].offsetWidth
+
+setParams(containerWidth)
+
 let prevKeyActive = false
 let nextKeyActive = true
 
-window.addEventListener('resize', checkWidth)
+function throttle(func, limit) {
+	let lastFunc
+	let lastRan
+	return function () {
+		const context = this
+		const args = arguments
+		if (!lastRan) {
+			func.apply(context, args)
+			lastRan = Date.now()
+		} else {
+			clearTimeout(lastFunc)
+			lastFunc = setTimeout(function () {
+				if (Date.now() - lastRan >= limit) {
+					func.apply(context, args)
+					lastRan = Date.now()
+				}
+			}, limit - (Date.now() - lastRan))
+		}
+	}
+}
 
 function checkWidth() {
 	containerWidth = container.offsetWidth
+	slideWidth = slides[0].offsetWidth
 	setParams(containerWidth)
 }
 
+const throttledCheckWidth = throttle(checkWidth, 1000)
+window.addEventListener('resize', throttledCheckWidth)
+
 function setParams(w) {
-	if (w < 551) {
-		slidesPerPage = 1
-	} else {
-		if (w < 901) {
-			slidesPerPage = 2
-		} else {
-			if (w < 1101) {
-				slidesPerPage = 3
-			} else {
-				slidesPerPage = 5
-			}
-		}
-	}
-	slidesCount = slides - slidesPerPage
+	slidesPerPage = Math.floor(w / slideWidth)
+	slidesCount = slides.length - slidesPerPage
 	if (currentPosition > slidesCount) {
 		currentPosition -= slidesPerPage
 	}
 	currentMargin = -currentPosition * (100 / slidesPerPage)
 	slider.style.marginLeft = currentMargin + '%'
-	if (currentPosition > 0) {
-		buttons[0].classList.remove('inactive')
-	}
-	if (currentPosition < slidesCount) {
-		buttons[1].classList.remove('inactive')
-	}
-	if (currentPosition >= slidesCount) {
-		buttons[1].classList.add('inactive')
-	}
+	updateButtons()
 }
 
-setParams()
-
 function slideRight() {
-	if (currentPosition != slidesCount) {
+	if (currentPosition < slidesCount) {
 		slider.style.marginLeft = currentMargin - 100 / slidesPerPage + '%'
 		currentMargin -= 100 / slidesPerPage
 		currentPosition++
-	}
-	if (currentPosition == slidesCount) {
-		buttons[1].classList.add('inactive')
-	}
-	if (currentPosition > 0) {
-		buttons[0].classList.remove('inactive')
+		updateButtons()
 	}
 }
 
 function slideLeft() {
-	if (currentPosition != 0) {
+	if (currentPosition > 0) {
 		slider.style.marginLeft = currentMargin + 100 / slidesPerPage + '%'
 		currentMargin += 100 / slidesPerPage
 		currentPosition--
-	}
-	if (currentPosition === 0) {
-		buttons[0].classList.add('inactive')
-	}
-	if (currentPosition < slidesCount) {
-		buttons[1].classList.remove('inactive')
+		updateButtons()
 	}
 }
 
+function updateButtons() {
+	if (currentPosition > 0) {
+		prevButton.classList.remove('inactive')
+	} else {
+		prevButton.classList.add('inactive')
+	}
+	if (currentPosition < slidesCount) {
+		nextButton.classList.remove('inactive')
+	} else {
+		nextButton.classList.add('inactive')
+	}
+}
 
-const wrapper = document.querySelector ('.Laptop__LightbulbsProducts')
-let pressed = false
-let startX = 0
-wrapper.addEventListener('mousedown', function(e){
-    pressed = true
-    startX = e.clientX
-    this.style.cursor = "grabbing"
-})
+prevButton.addEventListener('click', slideLeft)
+nextButton.addEventListener('click', slideRight)
 
-wrapper.addEventListener('mouseleave', function(e){
-    pressed = false
-})
-
-window.addEventListener('mouseup', function(e){
-    pressed = false
-    wrapper.style.cursor = "grab"
-})
-
-wrapper.addEventListener('mousemove', function(e){
-    if(!pressed) {
-        return
-    }
-    this.scrollLeft += startX - e.clientX
-})
-
-const wrappy = document.querySelector ('.Mobile__LightbulbsProducts')
-let press = false
-let startY = 0
-wrappy.addEventListener('mousedown', function(e){
-    press = true
-    startY = e.clientX
-    this.style.cursor = "grabbing"
-})
-
-wrappy.addEventListener('mouseleave', function(e){
-    press = false
-})
-
-window.addEventListener('mouseup', function(e){
-    press = false
-    wrapper.style.cursor = "grab"
-})
-
-wrappy.addEventListener('mousemove', function(e){
-    if(!press) {
-        return
-    }
-    this.scrollLeft += startY - e.clientX
-})
+setParams(containerWidth)

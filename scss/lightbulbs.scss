@@ -1,4 +1,4 @@
-.lightbulbs-button {
+.productSlider__ButtonSeeMore {
 	font-weight: bold;
 	background-color: #f74137;
 	color: #ffffff;
@@ -9,7 +9,6 @@
 	display: block;
 	margin: auto;
 	cursor: pointer;
-	margin-bottom: 3%;
   }
 
 
@@ -21,20 +20,20 @@
 	padding: 0;
   }
 
-  .productSlider__Text1 {
+  .productSlider__ProductName {
 	font-size: 17px;
 	text-transform: uppercase;
 	font-weight: bold;
   }
-  .productSlider__Text2 {
+  .productSlider__Code {
 	font-size: 16px;
   }
-  .productSlider__Text3 {
+  .productSlider__HiddenCost {
 	font-size: 15px;
 	text-decoration: line-through;
 	color: #A3A3A3;
   }
-  .productSlider__Text4 {
+  .productSlider__ActualCost {
 		font-size: 17px;
 		font-weight: bold;
   }
@@ -63,7 +62,6 @@
   .productSlider__Recommendation-text {
 	text-align: center;
 	padding-top: 2%;
-	font-size: 80px;
 	border-bottom: 1px solid gray;
 	padding-bottom: 2%;
 	font-weight: bold;
@@ -72,12 +70,12 @@
   
   .productSlider .productSlider__Recommendation-text {
 	position: relative;
-	font-size: 30px;
+	font: normal normal bold 50px Metropolis;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid rgb(185, 185, 185);
   }
   
   .productSlider .productSlider__Recommendation-text::after {
@@ -90,27 +88,8 @@
 	bottom: 0;
   }
   
-  .lightbulbs-button {
-	font-weight: bold;
-	background-color: #f74137;
-	color: #ffffff;
-	font-size: 17px;
-	border: 0;
-	width: 318px;
-	height: 55px;
-	display: block;
-	margin: auto;
-	cursor: pointer;
-	margin-bottom: 3%;
-  }
-  
-  .productSlider__LightbulbsSlideItem h5 {
-	text-decoration: line-through;
-	color: gray;
-  }
-  
   #productSlider__Container {
-	height: 70vh;
+	height: 82vh;
 	display: grid;
 	place-items: center;
   }
@@ -124,15 +103,15 @@
   }
   
   #productSlider__SliderContainer {
-	height: 500px;
+	height: 700px;
 	width: 100vw;
-	max-width: 1500px;
+	max-width: 15000px;
 	position: relative;
 	overflow: hidden;
 	padding: 20px 0px;
   }
   
-  #productSlider__SliderContainer .lightbulbs__Btn {
+  #productSlider__SliderContainer .productSlider_ButtonArrow {
 	position: absolute;
 	top: calc(47% - 10px);
 	height: 22px;
@@ -142,12 +121,12 @@
 	cursor: pointer;
   }
   
-  #productSlider__SliderContainer .lightbulbs__Btn:first-of-type {
+  #productSlider__SliderContainer .productSlider_ButtonArrow:first-of-type {
 	transform: rotate(-45deg);
 	left: 24px;
   }
   
-  #productSlider__SliderContainer .lightbulbs__Btn:last-of-type {
+  #productSlider__SliderContainer .productSlider_ButtonArrow:last-of-type {
 	transform: rotate(135deg);
 	left: 96.5%;
 	z-index: 2;
@@ -269,20 +248,20 @@
 		min-height: 60vh;
 		padding: 1rem;
 	  }
-	  .productSlider__Text1 {
+	  .productSlider__ProductName {
 		font-size: 17px;
 		text-transform: uppercase;
 		font-weight: bold;
 	  }
-	  .productSlider__Text2 {
+	  .productSlider__Code {
 		font-size: 16px;
 	  }
-	  .productSlider__Text3 {
+	  .productSlider__HiddenCost {
 		font-size: 15px;
 		text-decoration: line-through;
 		color: #A3A3A3;
 	  }
-	  .productSlider__Text4 {
+	  .productSlider__ActualCost {
 			font-size: 17px;
 			font-weight: bold;
 	  }
@@ -290,7 +269,7 @@
 		display: flex;
 		flex-direction:row;
 		grid-gap: 1rem;
-		max-width: 1168px;
+		max-width: 11680px;
 		width: 100%;
 		overflow-x: auto;
 		scroll-snap-type: x;
@@ -337,7 +316,7 @@
   
   .productSlider .productSlider__Recommendation-text {
 	position: relative;
-	font-size: 30px;
+	font: normal normal bold 38px Metropolis;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
@@ -364,20 +343,20 @@
 		min-height: 60vh;
 		padding: 1rem;
 	  }
-	  .productSlider__Text1 {
+	  .productSlider__ProductName {
 		font-size: 15px;
 		text-transform: uppercase;
 		font-weight: bold;
 	  }
-	  .productSlider__Text2 {
+	  .productSlider__Code {
 		font-size: 16px;
 	  }
-	  .productSlider__Text3 {
+	  .productSlider__HiddenCost {
 		font-size: 15px;
 		text-decoration: line-through;
 		color: #A3A3A3;
 	  }
-	  .productSlider__Text4 {
+	  .productSlider__ActualCost {
 			font-size: 17px;
 			font-weight: bold;
 	  }
@@ -385,7 +364,7 @@
 		display: flex;
 		flex-direction:row;
 		grid-gap: 1rem;
-		max-width: 1168px;
+		max-width: 11680px;
 		width: 100%;
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -435,7 +414,7 @@
   
   .productSlider .productSlider__Recommendation-text {
 	position: relative;
-	font-size: 30px;
+	font: normal normal bold 38px Metropolis;
 	padding: 20px;
 	display: flex;
 	justify-content: center;
