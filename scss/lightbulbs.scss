@@ -179,26 +179,28 @@
 	font-size: 60px;
 	font-weight: 600;
 	cursor: pointer;
+	border: 1px solid #E1E2E8;
   }
   
   .productSlider__LightbulbsSlideItem .productSlider__Wrapper span.minus {
 	font: normal normal normal 14px/20px Metropolis;
-	border-right: 2px solid rgba(0, 0, 0, 0.2);
 	background-color: #f8f8f8;
 	line-height: 3.5;
+	min-width: 20px;
   }
   
   .productSlider__LightbulbsSlideItem .productSlider__Wrapper span.plus {
 	font: normal normal normal 14px/20px Metropolis;
-	border-left: 2px solid rgba(0, 0, 0, 0.2);
 	background-color: #f8f8f8;
 	line-height: 3.5;
+	min-width: 20px;
   }
   
   .productSlider__LightbulbsSlideItem .productSlider__Wrapper span.num {
 	font: normal normal normal 14px/20px Metropolis;
-	background-color: #f8f8f8;
+	background-color: white;
 	line-height: 3.5;
+	min-width: 30px;
   }
   
   .productSlider__LightbulbsSlideItem .productSlider__Basket {
@@ -235,10 +237,13 @@
   
   #productSlider__LightbulbsSlider .productSlider__Hover {
 	display: none;
+	opacity: 0;
+	transition: 0.3s;
   }
   
   #productSlider__LightbulbsSlider .productSlider__LightbulbsSlideItem:hover .productSlider__Hover {
 	display: block;
+	opacity: 1;
   }
 }
 @media (min-width: 779px) and (max-width: 1169px) {
