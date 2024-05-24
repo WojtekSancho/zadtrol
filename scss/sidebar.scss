@@ -6,8 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     border: 1px solid #E1E2E8;
-    width: 305px;
-    height: 506px;
+    width: 300px;
+    height: 570px;
     margin-left: 20px;
     margin-bottom: 20px;
 }
@@ -54,14 +54,14 @@ body {
 }
 .filters {
     display:flex;
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 15px;
     margin-top: 20px;
     font-weight: bold;
     text-transform: uppercase;
 }
 .sidebar__filtersparameters {
-    height:170px;
+    height:270px;
     width:300px;
     margin-top: 30px;
     background-color: #E1E2E8;
@@ -146,7 +146,7 @@ body {
     border: 1px solid #E1E2E8;
 }
  .colors {
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 15px;
     font-weight: bold;
     text-transform: uppercase;
@@ -177,8 +177,8 @@ body {
     list-style: none;
 }
 .block__color {
-    width: 40px;
-    height: 40px;
+    width: 10px;
+    height: 30px;
     margin: 2px;
     background-color: red;
 }
@@ -196,8 +196,8 @@ border: 1px solid #E1E2E8;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 33px;
-    height: 30px;
+    width: 4px;
+    height: 20px;
     margin: 2px;
     border: 1px solid #E1E2E8;
 }
