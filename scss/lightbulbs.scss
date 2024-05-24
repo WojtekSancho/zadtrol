@@ -11,8 +11,11 @@
 	cursor: pointer;
   }
 
-
-
+  @media (min-width: 1195px) and (max-width: 1250px) {
+   #productSlider__SliderContainer {
+	padding: 80 0
+  }
+  }
 @media (min-width: 1170px) {
   
 * {
@@ -109,7 +112,7 @@
 	max-width: 15000px;
 	position: relative;
 	overflow: hidden;
-	padding: 20px 0px;
+	padding: 80px 0px;
   }
   
   #productSlider__SliderContainer .productSlider_ButtonArrow {
