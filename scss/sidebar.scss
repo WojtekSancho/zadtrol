@@ -1,6 +1,48 @@
 body {
     font-family: Metropolis;
 }
+.sidebar__ContainerTypes {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E1E2E8;
+    width: 305px;
+    height: 506px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.typecross {
+    width: 25px;
+    height: 25px;
+    background-color: #F2F3F4;
+    display: flex;
+    margin-top: 13px;
+    content: url(../svg/top.svg);
+}
+.gniazdkatypes {
+    border-bottom: 1px solid #F74137;
+    padding-bottom: 15px;
+}
+.sidebar__texttypes {
+    display: flex;
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.sidebar__type1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #E1E2E8;
+    padding-bottom: 15px;
+}
+.filterstypes {
+    display:flex;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 .sidebar__Container {
     display: flex;
     flex-direction: column;
