@@ -8,14 +8,10 @@
 	height: 55px;
 	display: block;
 	margin: auto;
+	margin-top: 200px;
 	cursor: pointer;
   }
 
-  @media (min-width: 1195px) and (max-width: 1250px) {
-   #productSlider__SliderContainer {
-	padding: 80 0
-  }
-  }
 @media (min-width: 1170px) {
   
 * {
@@ -148,6 +144,7 @@
 	margin: auto 10px;
 	background-color: white;
 	box-shadow: 2px 2px 4px 2px white;
+	text-align: center;
 	display: grid;
 	place-items: center;
 	bottom: -130px;
