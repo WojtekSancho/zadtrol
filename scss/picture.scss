@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "metropolis";
+    font-style: normal;
+    font-weight: 100;
+    src: url("/fonts/metropolis-thin-webfont.woff2") format("woff2");
+  }
+  
+  .pic__text::before {
+    content: " ";
+    display: block;
+    height: 10px;
+  }
+  
+  .pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .pic__slide {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    width: 100%;
+    left: 30%;
+    height: auto;
+    display: inline-block;
+    font-weight: light;
+  }
+  
+  .pic__image {
+    width: 70%;
+    height: 300px;
+    display: block;
+    transition: transform 0.3s ease;
+    filter: brightness(0.8);
+  }
+  
+  .pic__text {
+    font-family: "metropolis", sans-serif;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-size: 170%;
+  }
+  
+  .pic__textbox {
+    font-family: "metropolis", sans-serif;
+    position: absolute;
+    bottom: 25%;
+    left: 4%;
+    padding: 12px 20px;
+    border: 1px solid;
+    border-color: #F74137;
+    transition: transform 0.9s ease;
+    font-size: 70%;
+    font-weight: bold;
+    color: white;
+    background: #F74137;
+  }
+  
+  .pic__link {
+    font-family: "metropolis", sans-serif;
+    color: white;
+    font-weight: light;
+    position: absolute;
+    top: 45%;
+    left: 4%;
+    transition: transform 0.9s ease;
+    font-size: 170%;
+  }
+  

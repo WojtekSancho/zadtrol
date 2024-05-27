@@ -52,7 +52,10 @@
 		min-width: 35%;
 		justify-content: flex-end;
 		padding: 0;
-		margin-right: 30px; //nie usuwać
+		margin-right: 0px; //nie usuwać
+	}
+	.navbar img {
+		margin-right: 15px;
 	}
 	
 	.navbar__kosz {
@@ -85,6 +88,7 @@
 		width: 60px;
 		max-width: 35px;
 		height: 49px;
+		margin-top: 10px;	
 		justify-content: center;
 	}
 	
@@ -144,14 +148,6 @@
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
 	.burger__menu {
 		display: none;
 		cursor: pointer;
@@ -196,8 +192,10 @@
 		font-size: 1.7rem;
 	}
 	
-	
-	
+	.burger__menu--aside ul{
+	padding-left: 0px;
+    margin-top: 0px;
+    }
 	
 	
 	

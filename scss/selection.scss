@@ -1,0 +1,25 @@
+@mixin selection{
+
+    .selection {
+        font-family: Metropolis-light;
+        margin-top: 165px;
+        display: flex;
+        background: #F2F3F4 0% 0% no-repeat padding-box;
+        color: #111111;   
+
+      }
+      .selection  ul{
+        display: flex;
+        padding: 0;
+        text-decoration: none;
+      }
+      .selection a:visited{
+        color:#111111;
+      }
+
+      @media (max-width: 1001px) {
+        .selection {
+          margin-top: 100px;
+        }
+      }
+}

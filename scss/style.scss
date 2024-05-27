@@ -2,10 +2,21 @@
 @use '../scss/variables';
 
 @use './navbar.scss' as navbar;
+
+@use './selection.scss' as selection;
+
+@use './footer.scss' as footer;
+
+
+    // @use './whyUs' as whyUs;
+
+    // @include whyUs.whyUs;s
+
 @include navbar.navbar;
 
+@include selection.selection;
 
-// @use './footer.scss' as footer;
+
 // @include footer.footer;
 main{
     margin: 0.5em;
