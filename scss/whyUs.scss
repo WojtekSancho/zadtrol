@@ -213,3 +213,13 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .whyUs {
+        background-position: center;
+        background-size: 100% 100%;
+        &__listItemSpan {
+            display: none;
+        }
+    }
+}
